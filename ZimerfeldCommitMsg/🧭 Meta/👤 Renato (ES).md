@@ -8,7 +8,7 @@ tags: [preferencia, contexto, pessoa, meta]
 
 # 👤 Renato Zimerfeld
 
-> 🇧🇷 Portugués → [[👤 Renato]] · 🇺🇸 English → [[👤 Renato (EN)]]
+> 🇧🇷 Portugués → [[👤 Renato (PT)|👤 Renato]] · 🇺🇸 English → [[👤 Renato (EN)]]
 
 ## 🪪 Identidad
 - Email: renato.zimerfeld@gmail.com

@@ -40,14 +40,14 @@ Generate()
 
 ## 🔎 Detalhes
 
-- **Verbo por tipo (Conventional Commits):** o tipo escolhe o **verbo**, não vira prefixo. `feat`→"Adiciona/Add", `fix`→"Corrige/Fix", `docs`→"Documenta/Document", etc. O tipo **não** aparece na mensagem (só entre parênteses no resumo, como pista). Ver [[✍️ Subject iniciado por verbo sem prefixo de tipo]].
+- **Verbo por tipo (Conventional Commits):** o tipo escolhe o **verbo**, não vira prefixo. `feat`→"Adiciona/Add", `fix`→"Corrige/Fix", `docs`→"Documenta/Document", etc. O tipo **não** aparece na mensagem (só entre parênteses no resumo, como pista). Ver [[✍️ Subject iniciado por verbo sem prefixo de tipo (PT)|✍️ Subject iniciado por verbo sem prefixo de tipo]].
 - **Prefixo de contexto:** 1-3 palavras derivadas do **conceito** do arquivo de maior impacto (ex.: `OverlayController` → `Overlay`), para o título nunca ser genérico. `null` quando nenhum arquivo rende conceito legível.
 - **Estratégia principal (comentários):** `ExtractCommentsByFile()` lê as linhas `+`/`-` do diff e capta comentários (`//`, `///`, `/* */`, `/** */`, JSDoc `* `, `<!-- -->`, SQL/Lua `--`, VB `'`, `#`). Cada arquivo escolhe o **melhor** comentário (traduzido para pt-BR quando aplicável, saneado, recortado na cláusula principal).
 - **Estratégia fallback (nomes de arquivo):** quando não há comentário útil, deriva o **conceito** do nome removendo sufixos semânticos (`Service`, `Controller`, `Tests`, …) e traduzindo palavras.
 - **Saneamento:** descarta comentários com **delimitadores desbalanceados** (`()`, `[]`, `{}`, aspas, `<>`) ou terminados em **palavra de ligação solta**; entre válidos, escolhe o de melhor qualidade (não o mais longo).
 - **README:** se o `README.md` está staged, o título (primeira linha `#`) é usado como fallback descritivo.
 
-Ver [[⚙️ Geração de mensagem a partir do diff]].
+Ver [[⚙️ Geração de mensagem a partir do diff (PT)|⚙️ Geração de mensagem a partir do diff]].
 
 ## 🌐 Exemplo (pt-BR / EN)
 
@@ -66,7 +66,7 @@ Implement authentication
 
 ## 🔗 Ligações
 
-- [[🔍 1 - Detecção do diálogo de commit]]
-- [[🌐 3 - Idioma e auto-refresh]]
-- [[⚙️ CommitMessageGenerator]]
-- [[📜 Conventional Commits - Conceitos]]
+- [[🔍 1 - Detecção do diálogo de commit (PT)|🔍 1 - Detecção do diálogo de commit]]
+- [[🌐 3 - Idioma e auto-refresh (PT)|🌐 3 - Idioma e auto-refresh]]
+- [[⚙️ CommitMessageGenerator (PT)|⚙️ CommitMessageGenerator]]
+- [[📜 Conventional Commits - Conceitos (PT)|📜 Conventional Commits - Conceitos]]

@@ -32,6 +32,6 @@ Embutir os `.resx` (`Strings.resx` = inglês/neutro, `StringsPtBr.resx` = portug
 - Nomes de recurso determinísticos precisam casar exatamente com os `ResourceManager` em `Strings.cs`.
 
 ## 🔗 Relacionado
-- [[🌐 Localization]]
-- [[🏷️ Versionamento]]
-- [[🔗 Dependências]]
+- [[🌐 Localization (PT)|🌐 Localization]]
+- [[🏷️ Versionamento (PT)|🏷️ Versionamento]]
+- [[🔗 Dependências (PT)|🔗 Dependências]]

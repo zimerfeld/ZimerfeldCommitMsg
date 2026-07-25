@@ -40,7 +40,7 @@ Ambas referenciadas com `<Private>false</Private>` — **não** copiadas para o 
 
 ## 📦 Empacotamento (nuspec)
 
-- DLL em **`lib\` raiz** (grupo "any" que o Plugin Manager extrai) — gera o aviso **NU5101**, intencional e filtrado no `build.ps1`. Ver [[🏷️ Versionamento]].
+- DLL em **`lib\` raiz** (grupo "any" que o Plugin Manager extrai) — gera o aviso **NU5101**, intencional e filtrado no `build.ps1`. Ver [[🏷️ Versionamento (PT)|🏷️ Versionamento]].
 - Mesma DLL também em `tools\net9.0-windows\` para o install via **Package Manager Console** (`install.ps1`).
 - `LICENSE.txt` (CC BY-NC-ND 4.0, `type="file"`), `README.md`/`README.pt-BR.md`/`README.en-US.md`, e `icon-128.png` (em `images\`) no pacote.
 
@@ -68,6 +68,6 @@ Ambas referenciadas com `<Private>false</Private>` — **não** copiadas para o 
 
 ## 🔗 Ligações
 
-- [[🏗️ Arquitetura]]
-- [[🏷️ Versionamento]]
-- [[⚙️ CommitMessageGenerator]]
+- [[🏗️ Arquitetura (PT)|🏗️ Arquitetura]]
+- [[🏷️ Versionamento (PT)|🏷️ Versionamento]]
+- [[⚙️ CommitMessageGenerator (PT)|⚙️ CommitMessageGenerator]]

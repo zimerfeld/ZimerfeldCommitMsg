@@ -9,7 +9,7 @@ status: aceita
 
 # 🔀 ADR — Dos estrategias: comentarios del diff + nombres de archivo
 
-> 🇧🇷 Portugués → [[🔀 Duas estratégias - comentários e nomes de arquivo]] · 🇺🇸 English → [[🔀 Duas estratégias - comentários e nomes de arquivo (EN)]]
+> 🇧🇷 Portugués → [[🔀 Duas estratégias - comentários e nomes de arquivo (PT)|🔀 Duas estratégias - comentários e nomes de arquivo]] · 🇺🇸 English → [[🔀 Duas estratégias - comentários e nomes de arquivo (EN)]]
 
 ## 🎯 Contexto
 Para describir **qué** cambió, el generador necesita una fuente de contenido. Los generadores simples usan solo nombres de archivo, lo que produce mensajes genéricos ("update Service"). Por otro lado, no todo diff trae comentarios útiles.

@@ -8,7 +8,7 @@ tags: [inbox, captura-rapida, meta]
 
 # 📥 Inbox
 
-> 🇧🇷 Portugués → [[📥 Inbox]] · 🇺🇸 English → [[📥 Inbox (EN)]]
+> 🇧🇷 Portugués → [[📥 Inbox (PT)|📥 Inbox]] · 🇺🇸 English → [[📥 Inbox (EN)]]
 
 > [!note] Captura rápida
 > Notas sueltas que aún no se han organizado en las carpetas correctas. Procésalas periódicamente moviendo el contenido a las áreas apropiadas y vacía esta lista.

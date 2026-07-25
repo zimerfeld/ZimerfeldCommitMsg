@@ -48,18 +48,18 @@ RepoVocabularyConfig.Load(workingDir)  // instância vazia se não houver arquiv
 
 - Parser tolerante: `PropertyNameCaseInsensitive`, `ReadCommentHandling = Skip`, `AllowTrailingCommas`.
 - **Falhas de leitura/parse são silenciosas** (config vazia) — nunca quebram a geração da mensagem.
-- Carregado pelo [[⚙️ CommitMessageGenerator]] na construção, somado aos defaults embutidos.
+- Carregado pelo [[⚙️ CommitMessageGenerator (PT)|⚙️ CommitMessageGenerator]] na construção, somado aos defaults embutidos.
 
 ---
 
 ## 🧪 Testes
 
-`RepoVocabularyConfigTests` — cobre carga, merge e robustez a JSON malformado. Ver [[🏷️ Versionamento]].
+`RepoVocabularyConfigTests` — cobre carga, merge e robustez a JSON malformado. Ver [[🏷️ Versionamento (PT)|🏷️ Versionamento]].
 
 ---
 
 ## 🔗 Ligações
 
-- [[⚙️ CommitMessageGenerator]]
-- [[📓 Vocabulário por repositório]]
-- [[⚙️ Geração de mensagem a partir do diff]]
+- [[⚙️ CommitMessageGenerator (PT)|⚙️ CommitMessageGenerator]]
+- [[📓 Vocabulário por repositório (PT)|📓 Vocabulário por repositório]]
+- [[⚙️ Geração de mensagem a partir do diff (PT)|⚙️ Geração de mensagem a partir do diff]]

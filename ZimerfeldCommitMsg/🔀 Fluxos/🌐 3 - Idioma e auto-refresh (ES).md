@@ -8,7 +8,7 @@ tags: [fluxo, i18n, dropdown, auto-refresh, etapa3]
 
 # 🌐 Flujo: Idioma y auto-refresh
 
-> 🇧🇷 Portugués → [[🌐 3 - Idioma e auto-refresh]] · 🇺🇸 English → [[🌐 3 - Idioma e auto-refresh (EN)]]
+> 🇧🇷 Portugués → [[🌐 3 - Idioma e auto-refresh (PT)|🌐 3 - Idioma e auto-refresh]] · 🇺🇸 English → [[🌐 3 - Idioma e auto-refresh (EN)]]
 
 Cómo el usuario elige el idioma y cómo el mensaje se mantiene actualizado mientras el diálogo está abierto.
 

@@ -8,7 +8,7 @@ tags: [meta, protocolo]
 
 # 🧭 Como usar este cofre (protocolo do Claude)
 
-> 🇧🇷 Portugués → [[🧭 Como usar este cofre]] · 🇺🇸 English → [[🧭 Como usar este cofre (EN)]]
+> 🇧🇷 Portugués → [[🧭 Como usar este cofre (PT)|🧭 Como usar este cofre]] · 🇺🇸 English → [[🧭 Como usar este cofre (EN)]]
 
 > [!important] Protocolo de memoria
 > Al **inicio** de cada sesión, lee: [[🏠 Home (ES)|Home]], [[🔑 Fatos-Chave (ES)|Hechos Clave]] y el [[📌 Backlog (ES)|Backlog]] (punto de retomada).
@@ -35,7 +35,7 @@ tags: [meta, protocolo]
 6. Usa **callouts** (`> [!note]`, `> [!warning]`) para destacar.
 
 ## 🧩 Plugins de Obsidian
-- **Custom File Explorer sorting** (`custom-sort`) — **instalado y activo**; lee el [[sortspec]] para ordenar las carpetas por prioridad.
+- **Custom File Explorer sorting** (`custom-sort`) — **instalado y activo**; lee el [[sortspec (PT)|sortspec]] para ordenar las carpetas por prioridad.
 - **Dataview** / **Templater** — opcionales; sin ellos el cofre funciona con normalidad.
 
 ## 🔗 Relacionado

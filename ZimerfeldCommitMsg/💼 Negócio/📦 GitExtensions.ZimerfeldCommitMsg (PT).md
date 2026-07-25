@@ -1,4 +1,4 @@
-﻿---
+---
 tipo: negocio
 projeto: GitExtensions.ZimerfeldCommitMsg
 lang: pt-BR
@@ -15,7 +15,7 @@ repo: C:\GitExtensions\GitExtensions.ZimerfeldCommitMsg
 > 🇺🇸 English → [[📦 GitExtensions.ZimerfeldCommitMsg (EN)]] · 🇪🇸 Español → [[📦 GitExtensions.ZimerfeldCommitMsg (ES)]]
 
 ## 🎯 Objetivo
-Plugin para **[GitExtensions](https://gitextensions.github.io/)** que **gera mensagens de commit automaticamente** analisando o **conteúdo real** das alterações em stage (não apenas os nomes de arquivo). As mudanças são classificadas pelos tipos do **Conventional Commits** (`feat`/`fix`/`docs`/`test`/`chore`/`build`/`refactor`) para escolher o **verbo** adequado; a mensagem é um **subject iniciado por verbo** (sem o prefixo literal `tipo:`) mais um **corpo em bullets**. Ver [[📜 Conventional Commits - Conceitos]].
+Plugin para **[GitExtensions](https://gitextensions.github.io/)** que **gera mensagens de commit automaticamente** analisando o **conteúdo real** das alterações em stage (não apenas os nomes de arquivo). As mudanças são classificadas pelos tipos do **Conventional Commits** (`feat`/`fix`/`docs`/`test`/`chore`/`build`/`refactor`) para escolher o **verbo** adequado; a mensagem é um **subject iniciado por verbo** (sem o prefixo literal `tipo:`) mais um **corpo em bullets**. Ver [[📜 Conventional Commits - Conceitos (PT)|📜 Conventional Commits - Conceitos]].
 
 ## 💜 Financiamento / Patrocínio
 Canais de doação configurados (badges no topo do README):
@@ -39,7 +39,7 @@ C:\GitExtensions\GitExtensions.ZimerfeldCommitMsg\
 │   └─ net9.0-windows\                          # saída do build (DLL) usada pelo nupkg
 ├─ ZimerfeldCommitMsg\                          # 🧠 este cofre de memória
 ├─ build.ps1                                    # incrementa versão + build + deploy + nupkg
-├─ README.md / README.pt-BR.md / README.en-US.md  # espelhado em [[📖 README — Instalação, Uso e Build]]
+├─ README.md / README.pt-BR.md / README.en-US.md  # espelhado em [[📖 README — Instalação, Uso e Build (PT)|📖 README — Instalação, Uso e Build]]
 └─ GitExtensions.ZimerfeldCommitMsg.X.Y.Z.nupkg
 ```
 
@@ -50,24 +50,24 @@ C:\GitExtensions\GitExtensions.ZimerfeldCommitMsg\
 - **AssemblyName:** `GitExtensions.Plugins.ZimerfeldCommitMsg`
 - **Namespace raiz:** `GitExtensions.ZimerfeldCommitMsg`
 - **NeutralLanguage:** `pt-BR`
-- **Plugin model:** MEF (`[Export(typeof(IGitPlugin))]`) — ver [[🧩 Plugin MEF para GitExtensions]]
+- **Plugin model:** MEF (`[Export(typeof(IGitPlugin))]`) — ver [[🧩 Plugin MEF para GitExtensions (PT)|🧩 Plugin MEF para GitExtensions]]
 - **Referências externas** (de `refs\`, `Private=false`): `GitExtensions.Extensibility.dll`, `System.ComponentModel.Composition.dll`
 - **Testes:** xUnit, com `InternalsVisibleTo` expondo as funções puras do gerador
 
 ## ✨ Funcionalidades principais
-- **Geração automática** a partir do conteúdo real do diff staged (`git diff --cached`), não só dos nomes de arquivo. Ver [[⚙️ Geração de mensagem a partir do diff]].
-- **Verbo guiado por Conventional Commits** — classifica as mudanças por tipo (`feat`/`fix`/`docs`/`test`/`chore`/`build`/`refactor`) e prefixa o **verbo** correspondente (3ª pessoa em pt-BR / imperativo em inglês). O tipo em si **não** aparece. Ver [[✍️ Subject iniciado por verbo sem prefixo de tipo]].
-- **Duas estratégias de conteúdo:** baseada em **comentários** do diff (principal) e baseada em **nomes de arquivo** (fallback). Ver [[🔀 Duas estratégias - comentários e nomes de arquivo]].
+- **Geração automática** a partir do conteúdo real do diff staged (`git diff --cached`), não só dos nomes de arquivo. Ver [[⚙️ Geração de mensagem a partir do diff (PT)|⚙️ Geração de mensagem a partir do diff]].
+- **Verbo guiado por Conventional Commits** — classifica as mudanças por tipo (`feat`/`fix`/`docs`/`test`/`chore`/`build`/`refactor`) e prefixa o **verbo** correspondente (3ª pessoa em pt-BR / imperativo em inglês). O tipo em si **não** aparece. Ver [[✍️ Subject iniciado por verbo sem prefixo de tipo (PT)|✍️ Subject iniciado por verbo sem prefixo de tipo]].
+- **Duas estratégias de conteúdo:** baseada em **comentários** do diff (principal) e baseada em **nomes de arquivo** (fallback). Ver [[🔀 Duas estratégias - comentários e nomes de arquivo (PT)|🔀 Duas estratégias - comentários e nomes de arquivo]].
 - **Corpo em bullets** — até 5 frases de uma linha, cada uma resumindo a mudança mais significativa de um arquivo; **sempre ao menos um bullet**.
 - **Tradução inglês → português** dos comentários quando a saída é pt-BR; em inglês, passam intactos.
 - **Saneamento** — descarta comentários com delimitadores desbalanceados ou terminados em palavra de ligação solta; escolhe o de **melhor qualidade** (não o mais longo).
-- **Vocabulário por repositório** — `.zimerfeldcommitmsg.json` estende vocabulário conhecido/rejeitado e frases de conceito sem recompilar. Ver [[📓 RepoVocabularyConfig]].
-- **Multilíngue (PT-BR / EN):** automático pelo SO + override (dropdown de 3 itens no diálogo de commit **e** seletor em Configurações → Plugins). Ver [[🌐 Localization]].
-- **Três modos de integração:** template no diálogo de commit, menu Plugins e **auto-preenchimento** (ao abrir o diálogo e ao stage/unstage). Ver [[🔍 1 - Detecção do diálogo de commit]].
+- **Vocabulário por repositório** — `.zimerfeldcommitmsg.json` estende vocabulário conhecido/rejeitado e frases de conceito sem recompilar. Ver [[📓 RepoVocabularyConfig (PT)|📓 RepoVocabularyConfig]].
+- **Multilíngue (PT-BR / EN):** automático pelo SO + override (dropdown de 3 itens no diálogo de commit **e** seletor em Configurações → Plugins). Ver [[🌐 Localization (PT)|🌐 Localization]].
+- **Três modos de integração:** template no diálogo de commit, menu Plugins e **auto-preenchimento** (ao abrir o diálogo e ao stage/unstage). Ver [[🔍 1 - Detecção do diálogo de commit (PT)|🔍 1 - Detecção do diálogo de commit]].
 - **Não destrutivo** — nunca sobrescreve texto digitado manualmente.
 
 ## 🏗️ Arquitetura (Plugin → Generator → Localization)
-Ver [[🏗️ Arquitetura]]:
+Ver [[🏗️ Arquitetura (PT)|🏗️ Arquitetura]]:
 ```
 GitExtensions (host)
     │ MEF
@@ -92,7 +92,7 @@ tools\install.ps1      # instala o plugin (também via Package Manager Console)
 tools\uninstall.ps1    # remove (não afeta o resto do GitExtensions)
 tools\update-dll.ps1   # atualiza apenas a DLL na pasta Plugins
 ```
-> Via **Plugin Manager do GitExtensions**: buscar por *ZimerfeldCommitMsg* e instalar. Passo a passo em [[📖 README — Instalação, Uso e Build]] e [[🏷️ Versionamento]]. Runbooks: [[💻 Ambiente Local (Dev)]] · [[🚀 Deploy em Produção (Prod)]].
+> Via **Plugin Manager do GitExtensions**: buscar por *ZimerfeldCommitMsg* e instalar. Passo a passo em [[📖 README — Instalação, Uso e Build (PT)|📖 README — Instalação, Uso e Build]] e [[🏷️ Versionamento (PT)|🏷️ Versionamento]]. Runbooks: [[💻 Ambiente Local (Dev) (PT)|💻 Ambiente Local (Dev)]] · [[🚀 Deploy em Produção (Prod) (PT)|🚀 Deploy em Produção (Prod)]].
 
 ## 💰 Ângulo de investimento
 - **Fricção diária:** todo dev commita várias vezes por dia; boas mensagens são caras de escrever à mão. Este plugin remove essa fricção sem tirar o controle (não destrutivo).
@@ -102,17 +102,17 @@ tools\update-dll.ps1   # atualiza apenas a DLL na pasta Plugins
 
 ## 🐛 Armadilhas conhecidas
 > [!warning] O host não notifica "diálogo de commit aberto"
-> Não há evento de API para "FormCommit abriu". O plugin detecta o `FormCommit` recém-aberto no **`Application.Idle`** da UI e faz gates por instância + working dir para não reprocessar a cada tick. Ver [[🔍 1 - Detecção do diálogo de commit]] e [[🔌 Integração via template dropdown e Application.Idle]].
+> Não há evento de API para "FormCommit abriu". O plugin detecta o `FormCommit` recém-aberto no **`Application.Idle`** da UI e faz gates por instância + working dir para não reprocessar a cada tick. Ver [[🔍 1 - Detecção do diálogo de commit (PT)|🔍 1 - Detecção do diálogo de commit]] e [[🔌 Integração via template dropdown e Application.Idle (PT)|🔌 Integração via template dropdown e Application.Idle]].
 
 <!-- -->
 
 > [!warning] Strings de UI embutidas (sem satellite assemblies)
-> As strings ficam em `Resources\Strings.resx` / `StringsPtBr.resx` com `LogicalName` fixo, embutidas no **assembly principal** — assim o deploy é de **DLL única**. Ver [[📦 Strings embutidas sem satellite assemblies]] e [[🏷️ Versionamento]].
+> As strings ficam em `Resources\Strings.resx` / `StringsPtBr.resx` com `LogicalName` fixo, embutidas no **assembly principal** — assim o deploy é de **DLL única**. Ver [[📦 Strings embutidas sem satellite assemblies (PT)|📦 Strings embutidas sem satellite assemblies]] e [[🏷️ Versionamento (PT)|🏷️ Versionamento]].
 
 <!-- -->
 
 > [!warning] DLL em `lib\` RAIZ no nuspec (aviso NU5101 intencional)
-> Como nos irmãos, a DLL vai em `lib\` **raiz** (grupo "any") para o Plugin Manager extrair; o aviso **NU5101** do `nuget pack` é filtrado de propósito no `build.ps1`. Ver [[🏷️ Versionamento]] e [[🔗 Dependências]].
+> Como nos irmãos, a DLL vai em `lib\` **raiz** (grupo "any") para o Plugin Manager extrair; o aviso **NU5101** do `nuget pack` é filtrado de propósito no `build.ps1`. Ver [[🏷️ Versionamento (PT)|🏷️ Versionamento]] e [[🔗 Dependências (PT)|🔗 Dependências]].
 
 ## 🔢 Versionamento
 - Versão atual: **1.0.97** (csproj + nuspec sincronizados pelo `build.ps1`)
@@ -120,10 +120,10 @@ tools\update-dll.ps1   # atualiza apenas a DLL na pasta Plugins
 - A cada build, o `build.ps1` carimba versão + data nos **READMEs** (e mantém este cofre em sincronia)
 
 ## 🔗 Relacionado
-- [[📖 README — Instalação, Uso e Build]] — espelho do `README.md`
-- [[🧩 Plugin MEF para GitExtensions]]
-- [[📜 Conventional Commits - Conceitos]] · [[⚙️ Geração de mensagem a partir do diff]]
-- [[🏗️ Arquitetura]] · [[🔭 Visão Geral]] · [[🏷️ Versionamento]] · [[🔗 Dependências]]
+- [[📖 README — Instalação, Uso e Build (PT)|📖 README — Instalação, Uso e Build]] — espelho do `README.md`
+- [[🧩 Plugin MEF para GitExtensions (PT)|🧩 Plugin MEF para GitExtensions]]
+- [[📜 Conventional Commits - Conceitos (PT)|📜 Conventional Commits - Conceitos]] · [[⚙️ Geração de mensagem a partir do diff (PT)|⚙️ Geração de mensagem a partir do diff]]
+- [[🏗️ Arquitetura (PT)|🏗️ Arquitetura]] · [[🔭 Visão Geral (PT)|🔭 Visão Geral]] · [[🏷️ Versionamento (PT)|🏷️ Versionamento]] · [[🔗 Dependências (PT)|🔗 Dependências]]
 - `GitExtensions.ZimerfeldLFS` — irmão (Git LFS)
 - `GitExtensions.ZimerfeldTree` — irmão (árvore de branches)
-- [[🔑 Fatos-Chave]]
+- [[🔑 Fatos-Chave (PT)|🔑 Fatos-Chave]]

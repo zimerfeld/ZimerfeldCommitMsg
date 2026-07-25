@@ -55,10 +55,10 @@ gh release create vX.Y.Z .\GitExtensions.ZimerfeldCommitMsg.X.Y.Z.nupkg --title 
 ## 🩺 Troubleshooting
 - **NU5101 ao empacotar:** esperado (DLL em `lib\` raiz para o Plugin Manager extrair) — o `build.ps1` filtra.
 - **Pacote não gerado:** rode `.\build.ps1 -Force` (sem mudança detectada, o build é pulado).
-- **Plugin Manager não lista:** confirme a dependência marcadora `GitExtensions.Extensibility` no `.nuspec`. Ver [[🔗 Dependências]].
+- **Plugin Manager não lista:** confirme a dependência marcadora `GitExtensions.Extensibility` no `.nuspec`. Ver [[🔗 Dependências (PT)|🔗 Dependências]].
 
 ## 🔗 Ligações
-- [[💻 Ambiente Local (Dev)]]
-- [[🛠️ build.ps1]]
-- [[🏷️ Versionamento]]
-- [[🔗 Dependências]]
+- [[💻 Ambiente Local (Dev) (PT)|💻 Ambiente Local (Dev)]]
+- [[🛠️ build.ps1 (PT)|🛠️ build.ps1]]
+- [[🏷️ Versionamento (PT)|🏷️ Versionamento]]
+- [[🔗 Dependências (PT)|🔗 Dependências]]

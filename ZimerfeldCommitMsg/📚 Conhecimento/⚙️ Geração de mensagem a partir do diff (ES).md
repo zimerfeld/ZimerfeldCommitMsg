@@ -8,7 +8,7 @@ tags: [conhecimento, diff, extração, comentários, saneamento, tradução]
 
 # ⚙️ Geração de mensagem a partir do diff
 
-> 🇧🇷 Portugués → [[⚙️ Geração de mensagem a partir do diff]] · 🇺🇸 English → [[⚙️ Geração de mensagem a partir do diff (EN)]]
+> 🇧🇷 Portugués → [[⚙️ Geração de mensagem a partir do diff (PT)|⚙️ Geração de mensagem a partir do diff]] · 🇺🇸 English → [[⚙️ Geração de mensagem a partir do diff (EN)]]
 
 ## 📝 Resumen
 Cómo el [[⚙️ CommitMessageGenerator (ES)|CommitMessageGenerator]] transforma el `git diff --cached` en un mensaje de commit: clasificación → subject consolidado → cuerpo en viñetas, con extracción de comentarios, derivación de conceptos, saneamiento y traducción.

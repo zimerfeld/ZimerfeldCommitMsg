@@ -44,7 +44,7 @@ Somente as notas que espelham a versão **atual**:
 Substitui `versao: …` no frontmatter e as ocorrências de `**X.Y.Z**` / `` `X.Y.Z` `` da versão anterior.
 
 > [!warning] Caminhos do carimbo × reestruturação v2 do cofre (2026-07-04)
-> O cofre foi reestruturado para o padrão "Cofre de Neurônios v2" e as 4 notas acima **mudaram de pasta/nome** (antes: `🚀 Projetos\GitExtensions.ZimerfeldCommitMsg.md`, `📚 Conhecimento\README — Instalação, Uso e Build.md`, `🏛 Sistema\Versionamento.md`, `🏛 Sistema\Visão Geral.md`). A **seção 2b do `build.ps1` precisa ser atualizada** para os novos caminhos — pendência registrada em [[📌 Backlog]]. Considerar também carimbar os pares `(EN)` dessas notas.
+> O cofre foi reestruturado para o padrão "Cofre de Neurônios v2" e as 4 notas acima **mudaram de pasta/nome** (antes: `🚀 Projetos\GitExtensions.ZimerfeldCommitMsg.md`, `📚 Conhecimento\README — Instalação, Uso e Build.md`, `🏛 Sistema\Versionamento.md`, `🏛 Sistema\Visão Geral.md`). A **seção 2b do `build.ps1` precisa ser atualizada** para os novos caminhos — pendência registrada em [[📌 Backlog (PT)|📌 Backlog]]. Considerar também carimbar os pares `(EN)` dessas notas.
 
 ---
 
@@ -61,7 +61,7 @@ Requer **.NET 9 SDK** e, para o deploy em `Program Files`, **Administrador**.
 
 ## 🔗 Ligações
 
-- [[🏷️ Versionamento]]
-- [[🔗 Dependências]]
-- [[💻 Ambiente Local (Dev)]]
-- [[🚀 Deploy em Produção (Prod)]]
+- [[🏷️ Versionamento (PT)|🏷️ Versionamento]]
+- [[🔗 Dependências (PT)|🔗 Dependências]]
+- [[💻 Ambiente Local (Dev) (PT)|💻 Ambiente Local (Dev)]]
+- [[🚀 Deploy em Produção (Prod) (PT)|🚀 Deploy em Produção (Prod)]]

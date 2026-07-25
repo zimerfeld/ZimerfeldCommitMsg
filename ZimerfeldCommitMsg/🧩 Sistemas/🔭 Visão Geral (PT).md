@@ -1,4 +1,4 @@
-﻿---
+---
 tipo: sistema
 projeto: GitExtensions.ZimerfeldCommitMsg
 lang: pt-BR
@@ -12,7 +12,7 @@ tags: [sistema, overview, plugin, gitextensions, commit-message, conventional-co
 
 ## 🎯 O que é
 
-Plugin para **GitExtensions** (Windows) que **gera a mensagem de commit automaticamente** a partir do conteúdo real das alterações em stage. Ele se integra ao **diálogo de commit** do host: ao abrir o diálogo (e sempre que arquivos entram/saem do stage), o plugin lê o `git diff --cached`, classifica as mudanças por **Conventional Commits** e materializa um **subject iniciado por verbo** + **corpo em bullets**, no idioma escolhido. Ver [[📜 Conventional Commits - Conceitos]] e [[✍️ Subject iniciado por verbo sem prefixo de tipo]].
+Plugin para **GitExtensions** (Windows) que **gera a mensagem de commit automaticamente** a partir do conteúdo real das alterações em stage. Ele se integra ao **diálogo de commit** do host: ao abrir o diálogo (e sempre que arquivos entram/saem do stage), o plugin lê o `git diff --cached`, classifica as mudanças por **Conventional Commits** e materializa um **subject iniciado por verbo** + **corpo em bullets**, no idioma escolhido. Ver [[📜 Conventional Commits - Conceitos (PT)|📜 Conventional Commits - Conceitos]] e [[✍️ Subject iniciado por verbo sem prefixo de tipo (PT)|✍️ Subject iniciado por verbo sem prefixo de tipo]].
 
 ## 🧱 Stack
 
@@ -34,28 +34,28 @@ Plugin para **GitExtensions** (Windows) que **gera a mensagem de commit automati
 ## 🔌 Os três modos de integração
 
 ### 1️⃣ Template no dropdown do diálogo de commit
-O plugin registra **três itens de template** (um por idioma) via `CommitTemplateManager`. Escolher um item aplica a mensagem gerada naquele idioma e fixa o idioma para o auto-refresh da sessão. Ver [[🌐 3 - Idioma e auto-refresh]].
+O plugin registra **três itens de template** (um por idioma) via `CommitTemplateManager`. Escolher um item aplica a mensagem gerada naquele idioma e fixa o idioma para o auto-refresh da sessão. Ver [[🌐 3 - Idioma e auto-refresh (PT)|🌐 3 - Idioma e auto-refresh]].
 
 ### 2️⃣ Menu Plugins → ZimerfeldCommitMsg
 Dispara `Execute` e gera a mensagem para o repositório atual, usando o idioma do **setting** (Automático/PT/EN).
 
 ### 3️⃣ Auto-preenchimento (Application.Idle)
-Como não há evento de "diálogo de commit aberto", o plugin observa o **`Application.Idle`**, detecta o `FormCommit` recém-aberto e **preenche a caixa de mensagem** — repetindo ao stage/unstage. **Nunca sobrescreve** texto digitado manualmente. Ver [[🔍 1 - Detecção do diálogo de commit]].
+Como não há evento de "diálogo de commit aberto", o plugin observa o **`Application.Idle`**, detecta o `FormCommit` recém-aberto e **preenche a caixa de mensagem** — repetindo ao stage/unstage. **Nunca sobrescreve** texto digitado manualmente. Ver [[🔍 1 - Detecção do diálogo de commit (PT)|🔍 1 - Detecção do diálogo de commit]].
 
 ## ⚙️ Como a mensagem é gerada
 
-O [[⚙️ CommitMessageGenerator]] lê o `git diff --cached` e produz:
+O [[⚙️ CommitMessageGenerator (PT)|⚙️ CommitMessageGenerator]] lê o `git diff --cached` e produz:
 - **Subject consolidado:** `[<contexto>] - <verbo> N arquivos (tipos)` — ex.: `Overlay - Adiciona 10 arquivos (feat, fix, docs)`.
 - **Corpo em bullets:** até 5 frases, cada uma resumindo a mudança mais significativa de um arquivo, extraída dos **comentários** do diff (estratégia principal) ou derivada dos **nomes de arquivo** (fallback).
 
-Ver [[⚙️ Geração de mensagem a partir do diff]].
+Ver [[⚙️ Geração de mensagem a partir do diff (PT)|⚙️ Geração de mensagem a partir do diff]].
 
 ## 🧰 Recursos transversais
 
 | Recurso | Detalhe |
 |---|---|
-| Duas estratégias | comentários do diff (principal) + nomes de arquivo (fallback) — [[🔀 Duas estratégias - comentários e nomes de arquivo]] |
-| Vocabulário por repo | `.zimerfeldcommitmsg.json` estende vocabulário/conceitos — [[📓 RepoVocabularyConfig]] |
+| Duas estratégias | comentários do diff (principal) + nomes de arquivo (fallback) — [[🔀 Duas estratégias - comentários e nomes de arquivo (PT)|🔀 Duas estratégias - comentários e nomes de arquivo]] |
+| Vocabulário por repo | `.zimerfeldcommitmsg.json` estende vocabulário/conceitos — [[📓 RepoVocabularyConfig (PT)|📓 RepoVocabularyConfig]] |
 | Tradução EN→PT | comentários traduzidos quando a saída é pt-BR; intactos em inglês |
 | Saneamento | descarta comentários com delimitadores desbalanceados ou ligação solta no fim |
 | Localização | strings de UI embutidas (`Strings.resx`/`StringsPtBr.resx`) + idioma da mensagem |
@@ -68,7 +68,7 @@ Ver [[⚙️ Geração de mensagem a partir do diff]].
 
 ## 🔗 Ligações
 
-- [[🏗️ Arquitetura]]
-- [[🏷️ Versionamento]]
-- [[🔗 Dependências]]
-- [[📜 Conventional Commits - Conceitos]]
+- [[🏗️ Arquitetura (PT)|🏗️ Arquitetura]]
+- [[🏷️ Versionamento (PT)|🏷️ Versionamento]]
+- [[🔗 Dependências (PT)|🔗 Dependências]]
+- [[📜 Conventional Commits - Conceitos (PT)|📜 Conventional Commits - Conceitos]]

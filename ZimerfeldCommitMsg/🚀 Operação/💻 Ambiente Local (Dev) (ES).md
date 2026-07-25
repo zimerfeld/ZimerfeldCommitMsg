@@ -8,7 +8,7 @@ tags: [operação, dev, build, install, powershell]
 
 # 💻 Entorno Local (Dev)
 
-> 🇧🇷 Portugués → [[💻 Ambiente Local (Dev)]] · 🇺🇸 English → [[💻 Ambiente Local (Dev) (EN)]]
+> 🇧🇷 Portugués → [[💻 Ambiente Local (Dev) (PT)|💻 Ambiente Local (Dev)]] · 🇺🇸 English → [[💻 Ambiente Local (Dev) (EN)]]
 
 Cómo compilar e instalar el plugin en el GitExtensions local para desarrollar y probar.
 

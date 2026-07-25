@@ -28,7 +28,7 @@ tags: [conhecimento, git, conventional-commits, mensagem-de-commit]
 ## ⚙️ Como o plugin aplica
 
 > [!important] Verbo, não prefixo literal
-> O plugin usa o tipo para **escolher o verbo**, **não** para escrever `feat:`. O subject começa pelo verbo; os tipos envolvidos aparecem só entre parênteses na linha-resumo. Ver [[✍️ Subject iniciado por verbo sem prefixo de tipo]].
+> O plugin usa o tipo para **escolher o verbo**, **não** para escrever `feat:`. O subject começa pelo verbo; os tipos envolvidos aparecem só entre parênteses na linha-resumo. Ver [[✍️ Subject iniciado por verbo sem prefixo de tipo (PT)|✍️ Subject iniciado por verbo sem prefixo de tipo]].
 
 Classificação em duas dimensões:
 - **Categoria por extensão** (`ExtCategory`): `source`, `web`, `docs`, `build`, `config` — usada para priorizar arquivos e inferir tipo.
@@ -53,9 +53,9 @@ Overlay - Adiciona 10 arquivos (feat, fix, docs)
 ```
 
 ## 📍 Onde isto aparece no plugin
-O [[⚙️ CommitMessageGenerator]] faz a classificação e o `LanguagePack` mapeia tipo → verbo por idioma. Ver [[⚙️ Geração de mensagem a partir do diff]].
+O [[⚙️ CommitMessageGenerator (PT)|⚙️ CommitMessageGenerator]] faz a classificação e o `LanguagePack` mapeia tipo → verbo por idioma. Ver [[⚙️ Geração de mensagem a partir do diff (PT)|⚙️ Geração de mensagem a partir do diff]].
 
 ## 🔗 Relacionado
-- [[📦 GitExtensions.ZimerfeldCommitMsg]]
-- [[⚙️ Geração de mensagem a partir do diff]]
-- [[✍️ Subject iniciado por verbo sem prefixo de tipo]]
+- [[📦 GitExtensions.ZimerfeldCommitMsg (PT)|📦 GitExtensions.ZimerfeldCommitMsg]]
+- [[⚙️ Geração de mensagem a partir do diff (PT)|⚙️ Geração de mensagem a partir do diff]]
+- [[✍️ Subject iniciado por verbo sem prefixo de tipo (PT)|✍️ Subject iniciado por verbo sem prefixo de tipo]]

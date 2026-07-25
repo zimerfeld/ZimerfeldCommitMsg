@@ -1,4 +1,4 @@
-﻿---
+---
 tipo: conhecimento
 projeto: GitExtensions.ZimerfeldCommitMsg
 lang: en-US
@@ -10,7 +10,7 @@ versao: 1.0.97
 
 # 📖 README — Install, Use and Build
 
-> 🇧🇷 Português → [[📖 README — Instalação, Uso e Build]] · 🇪🇸 Español → [[📖 README — Instalação, Uso e Build (ES)]]
+> 🇧🇷 Português → [[📖 README — Instalação, Uso e Build (PT)|📖 README — Instalação, Uso e Build]] · 🇪🇸 Español → [[📖 README — Instalação, Uso e Build (ES)]]
 
 > Mirror of the repository root `README.md` (bilingual EN/PT), reconciled with the code on 2026-07-04.
 > Project note: [[📦 GitExtensions.ZimerfeldCommitMsg (EN)|GitExtensions.ZimerfeldCommitMsg]]. Concepts in [[📜 Conventional Commits - Conceitos (EN)|Conventional Commits - Concepts]].
