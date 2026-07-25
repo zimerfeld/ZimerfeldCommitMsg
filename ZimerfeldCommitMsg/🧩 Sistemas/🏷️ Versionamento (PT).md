@@ -1,4 +1,4 @@
-﻿---
+---
 tipo: sistema
 projeto: GitExtensions.ZimerfeldCommitMsg
 lang: pt-BR
@@ -20,7 +20,7 @@ tags: [build, versão, nupkg, deploy]
 > As strings de UI vivem em `Resources/Strings.resx` e `Resources/StringsPtBr.resx`, embutidas no
 > **assembly principal** com `LogicalName` explícito — assim o MSBuild **não** as desvia para
 > satellite assemblies e o deploy continua sendo de **DLL única**. Lidas em runtime por `Strings`.
-> Ver [[📦 Strings embutidas sem satellite assemblies]].
+> Ver [[📦 Strings embutidas sem satellite assemblies (PT)|📦 Strings embutidas sem satellite assemblies]].
 
 ## 🔄 Ciclo build.ps1
 
@@ -45,7 +45,7 @@ build.ps1  [-Force]
 > [!warning] Aviso **NU5101** é intencional
 > A DLL é empacotada em `lib\` **raiz** (grupo "any" que o Plugin Manager extrai), não em
 > `lib\net9.0-windows\`. Isso gera o aviso NU5101, que o `build.ps1` **filtra de propósito** no
-> `nuget pack`. Detalhe em [[🔗 Dependências]] e no `.nuspec`.
+> `nuget pack`. Detalhe em [[🔗 Dependências (PT)|🔗 Dependências]] e no `.nuspec`.
 
 <!-- -->
 
@@ -77,7 +77,7 @@ Suíte **xUnit** em `tests\GitExtensions.ZimerfeldCommitMsg.Tests\` (as funçõe
 
 ## 🔗 Ligações
 
-- [[🛠️ build.ps1]]
-- [[🔗 Dependências]]
-- [[💻 Ambiente Local (Dev)]]
-- [[🚀 Deploy em Produção (Prod)]]
+- [[🛠️ build.ps1 (PT)|🛠️ build.ps1]]
+- [[🔗 Dependências (PT)|🔗 Dependências]]
+- [[💻 Ambiente Local (Dev) (PT)|💻 Ambiente Local (Dev)]]
+- [[🚀 Deploy em Produção (Prod) (PT)|🚀 Deploy em Produção (Prod)]]

@@ -37,7 +37,7 @@ A escolha de um item do dropdown é reconhecida **indiretamente**: o host materi
 - Localizar a caixa de mensagem depende de reflection sobre o `FormCommit`.
 
 ## 🔗 Relacionado
-- [[🔍 1 - Detecção do diálogo de commit]]
-- [[🌐 3 - Idioma e auto-refresh]]
-- [[🔌 ZimerfeldCommitMsgPlugin]]
-- [[🏗️ Arquitetura]]
+- [[🔍 1 - Detecção do diálogo de commit (PT)|🔍 1 - Detecção do diálogo de commit]]
+- [[🌐 3 - Idioma e auto-refresh (PT)|🌐 3 - Idioma e auto-refresh]]
+- [[🔌 ZimerfeldCommitMsgPlugin (PT)|🔌 ZimerfeldCommitMsgPlugin]]
+- [[🏗️ Arquitetura (PT)|🏗️ Arquitetura]]

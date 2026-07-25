@@ -32,5 +32,5 @@ which rtk             # Verificar binário correto
 > Se `rtk gain` falhar, talvez exista o reachingforthejack/rtk (Rust Type Kit) instalado em vez do correto.
 
 ## 🔗 Relacionado
-- [[🔑 Fatos-Chave]]
-- [[👤 Renato]]
+- [[🔑 Fatos-Chave (PT)|🔑 Fatos-Chave]]
+- [[👤 Renato (PT)|👤 Renato]]

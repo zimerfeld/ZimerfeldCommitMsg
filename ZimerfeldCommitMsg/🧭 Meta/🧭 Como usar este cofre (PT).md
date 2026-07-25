@@ -11,8 +11,8 @@ tags: [meta, protocolo]
 > 🇺🇸 English → [[🧭 Como usar este cofre (EN)]] · 🇪🇸 Español → [[🧭 Como usar este cofre (ES)]]
 
 > [!important] Protocolo de memória
-> No **início** de cada sessão, leia: [[🏠 Home]], [[🔑 Fatos-Chave]] e o [[📌 Backlog]] (ponto de retomada).
-> No **fim** de cada sessão, atualize as notas afetadas e o [[📌 Backlog]].
+> No **início** de cada sessão, leia: [[🏠 Home (PT)|🏠 Home]], [[🔑 Fatos-Chave (PT)|🔑 Fatos-Chave]] e o [[📌 Backlog (PT)|📌 Backlog]] (ponto de retomada).
+> No **fim** de cada sessão, atualize as notas afetadas e o [[📌 Backlog (PT)|📌 Backlog]].
 
 ## ✍️ Quando gravar memória
 | Situação | Onde gravar |
@@ -35,10 +35,10 @@ tags: [meta, protocolo]
 6. Use **callouts** (`> [!note]`, `> [!warning]`) para destaques.
 
 ## 🧩 Plugins do Obsidian
-- **Custom File Explorer sorting** (`custom-sort`) — **instalado e ativo**; lê o [[sortspec]] para ordenar as pastas por prioridade.
+- **Custom File Explorer sorting** (`custom-sort`) — **instalado e ativo**; lê o [[sortspec (PT)|sortspec]] para ordenar as pastas por prioridade.
 - **Dataview** / **Templater** — opcionais; sem eles o cofre funciona normalmente.
 
 ## 🔗 Relacionado
-- [[🏠 Home]]
-- [[🔑 Fatos-Chave]]
-- [[📌 Backlog]]
+- [[🏠 Home (PT)|🏠 Home]]
+- [[🔑 Fatos-Chave (PT)|🔑 Fatos-Chave]]
+- [[📌 Backlog (PT)|📌 Backlog]]

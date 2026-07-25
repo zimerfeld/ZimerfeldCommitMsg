@@ -11,7 +11,7 @@ tags: [conhecimento, diff, extração, comentários, saneamento, tradução]
 > 🇺🇸 English → [[⚙️ Geração de mensagem a partir do diff (EN)]] · 🇪🇸 Español → [[⚙️ Geração de mensagem a partir do diff (ES)]]
 
 ## 📝 Resumo
-Como o [[⚙️ CommitMessageGenerator]] transforma o `git diff --cached` numa mensagem de commit: classificação → subject consolidado → corpo em bullets, com extração de comentários, derivação de conceitos, saneamento e tradução.
+Como o [[⚙️ CommitMessageGenerator (PT)|⚙️ CommitMessageGenerator]] transforma o `git diff --cached` numa mensagem de commit: classificação → subject consolidado → corpo em bullets, com extração de comentários, derivação de conceitos, saneamento e tradução.
 
 ## 🔄 Pipeline
 
@@ -58,7 +58,7 @@ Quando a saída é pt-BR, frases e verbos são traduzidos por dicionários (mais
 
 ## 🔡 Derivação de conceitos (fallback)
 
-`SemanticSuffixes` remove sufixos como `Service`, `Controller`, `Repository`, `Tests`, `ViewModel`, … para chegar ao conceito do nome. Ex.: `OverlayController` → `Overlay`. Vocabulário conhecido/rejeitado e frases de conceito vêm dos defaults + [[📓 RepoVocabularyConfig]].
+`SemanticSuffixes` remove sufixos como `Service`, `Controller`, `Repository`, `Tests`, `ViewModel`, … para chegar ao conceito do nome. Ex.: `OverlayController` → `Overlay`. Vocabulário conhecido/rejeitado e frases de conceito vêm dos defaults + [[📓 RepoVocabularyConfig (PT)|📓 RepoVocabularyConfig]].
 
 ## ✅ Garantias
 
@@ -67,7 +67,7 @@ Quando a saída é pt-BR, frases e verbos são traduzidos por dicionários (mais
 - **README staged:** o título (`#`) serve de fallback descritivo.
 
 ## 🔗 Relacionado
-- [[📜 Conventional Commits - Conceitos]]
-- [[⚙️ CommitMessageGenerator]]
-- [[🔀 Duas estratégias - comentários e nomes de arquivo]]
-- [[⚙️ 2 - Geração da mensagem]]
+- [[📜 Conventional Commits - Conceitos (PT)|📜 Conventional Commits - Conceitos]]
+- [[⚙️ CommitMessageGenerator (PT)|⚙️ CommitMessageGenerator]]
+- [[🔀 Duas estratégias - comentários e nomes de arquivo (PT)|🔀 Duas estratégias - comentários e nomes de arquivo]]
+- [[⚙️ 2 - Geração da mensagem (PT)|⚙️ 2 - Geração da mensagem]]

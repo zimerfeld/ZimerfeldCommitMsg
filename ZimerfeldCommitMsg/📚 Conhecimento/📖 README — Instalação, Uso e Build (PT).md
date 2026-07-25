@@ -1,4 +1,4 @@
-﻿---
+---
 tipo: conhecimento
 projeto: GitExtensions.ZimerfeldCommitMsg
 lang: pt-BR
@@ -13,21 +13,21 @@ versao: 1.0.97
 > 🇺🇸 English → [[📖 README — Instalação, Uso e Build (EN)]] · 🇪🇸 Español → [[📖 README — Instalação, Uso e Build (ES)]]
 
 > Espelho do `README.md` da raiz do repositório (bilíngue EN/PT), reconciliado com o código em 2026-07-04.
-> Nota de projeto: [[📦 GitExtensions.ZimerfeldCommitMsg]]. Conceitos em [[📜 Conventional Commits - Conceitos]].
-> O `build.ps1` carimba versão + data nos READMEs **e** nas notas do cofre que espelham a versão atual — ver [[🏷️ Versionamento]].
+> Nota de projeto: [[📦 GitExtensions.ZimerfeldCommitMsg (PT)|📦 GitExtensions.ZimerfeldCommitMsg]]. Conceitos em [[📜 Conventional Commits - Conceitos (PT)|📜 Conventional Commits - Conceitos]].
+> O `build.ps1` carimba versão + data nos READMEs **e** nas notas do cofre que espelham a versão atual — ver [[🏷️ Versionamento (PT)|🏷️ Versionamento]].
 
 Plugin para **[GitExtensions](https://gitextensions.github.io/)** que **gera mensagens de commit automaticamente** analisando o conteúdo real das alterações em stage. As mudanças são classificadas pelos tipos do **Conventional Commits** para escolher o **verbo**; a mensagem é um **subject iniciado por verbo** (sem o prefixo `tipo:`) mais um **corpo em bullets**. Saída **bilíngue** (pt-BR / inglês), detectada pelo SO com override manual.
 
 ## ✨ Funcionalidades em alto nível
 - **Geração automática** a partir do conteúdo do diff staged — não só dos nomes de arquivo.
-- **Verbo guiado por Conventional Commits** (`feat`/`fix`/`docs`/`test`/`chore`/`build`/`refactor`) — o tipo **não** aparece na mensagem. Ver [[✍️ Subject iniciado por verbo sem prefixo de tipo]].
-- **Duas estratégias** — comentários do diff (principal) + nomes de arquivo (fallback). Ver [[🔀 Duas estratégias - comentários e nomes de arquivo]].
-- **Vocabulário por repositório** — `.zimerfeldcommitmsg.json` estende vocabulário/conceitos sem recompilar. Ver [[📓 RepoVocabularyConfig]].
+- **Verbo guiado por Conventional Commits** (`feat`/`fix`/`docs`/`test`/`chore`/`build`/`refactor`) — o tipo **não** aparece na mensagem. Ver [[✍️ Subject iniciado por verbo sem prefixo de tipo (PT)|✍️ Subject iniciado por verbo sem prefixo de tipo]].
+- **Duas estratégias** — comentários do diff (principal) + nomes de arquivo (fallback). Ver [[🔀 Duas estratégias - comentários e nomes de arquivo (PT)|🔀 Duas estratégias - comentários e nomes de arquivo]].
+- **Vocabulário por repositório** — `.zimerfeldcommitmsg.json` estende vocabulário/conceitos sem recompilar. Ver [[📓 RepoVocabularyConfig (PT)|📓 RepoVocabularyConfig]].
 - **Multilíngue (PT-BR / EN)** — automático pelo SO + override (dropdown de 3 itens e setting).
 - **Auto-preenchimento** ao abrir o diálogo e ao stage/unstage; **não destrutivo**.
 
 ## 🧩 Como funciona
-Ao abrir o diálogo de commit, o plugin lê o `git diff --cached`, classifica as mudanças e preenche a caixa de mensagem. Detalhes em [[⚙️ Geração de mensagem a partir do diff]] e [[🔍 1 - Detecção do diálogo de commit]].
+Ao abrir o diálogo de commit, o plugin lê o `git diff --cached`, classifica as mudanças e preenche a caixa de mensagem. Detalhes em [[⚙️ Geração de mensagem a partir do diff (PT)|⚙️ Geração de mensagem a partir do diff]] e [[🔍 1 - Detecção do diálogo de commit (PT)|🔍 1 - Detecção do diálogo de commit]].
 
 ## 🗣️ Idioma
 Duas formas de escolher (rótulos bilíngues):
@@ -63,7 +63,7 @@ Exemplo lado a lado:
 pwsh .\build.ps1          # incrementa versão, build Release, empacota o .nupkg
 pwsh .\build.ps1 -Force   # sempre recompila/empacota
 ```
-Ver [[🏷️ Versionamento]] e [[🛠️ build.ps1]].
+Ver [[🏷️ Versionamento (PT)|🏷️ Versionamento]] e [[🛠️ build.ps1 (PT)|🛠️ build.ps1]].
 
 ## 💜 Apoie o projeto
 **GitHub Sponsors:** [github.com/sponsors/zimerfeld](https://github.com/sponsors/zimerfeld) · **Ko-fi:** [ko-fi.com/C0D621FCGD](https://ko-fi.com/C0D621FCGD). Badges no topo do README (versão + downloads do NuGet).
@@ -72,7 +72,7 @@ Ver [[🏷️ Versionamento]] e [[🛠️ build.ps1]].
 Copyright © 2026 Zimerfeld — **CC BY-NC-ND 4.0** (`LICENSE.txt`).
 
 ## 🔗 Relacionado
-- [[📦 GitExtensions.ZimerfeldCommitMsg]]
-- [[📜 Conventional Commits - Conceitos]]
-- [[⚙️ Geração de mensagem a partir do diff]]
-- [[🔑 Fatos-Chave]]
+- [[📦 GitExtensions.ZimerfeldCommitMsg (PT)|📦 GitExtensions.ZimerfeldCommitMsg]]
+- [[📜 Conventional Commits - Conceitos (PT)|📜 Conventional Commits - Conceitos]]
+- [[⚙️ Geração de mensagem a partir do diff (PT)|⚙️ Geração de mensagem a partir do diff]]
+- [[🔑 Fatos-Chave (PT)|🔑 Fatos-Chave]]

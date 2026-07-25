@@ -9,7 +9,7 @@ status: aceita
 
 # ✍️ ADR — Subject iniciado por verbo, sin el prefijo literal "tipo:"
 
-> 🇧🇷 Portugués → [[✍️ Subject iniciado por verbo sem prefixo de tipo]] · 🇺🇸 English → [[✍️ Subject iniciado por verbo sem prefixo de tipo (EN)]]
+> 🇧🇷 Portugués → [[✍️ Subject iniciado por verbo sem prefixo de tipo (PT)|✍️ Subject iniciado por verbo sem prefixo de tipo]] · 🇺🇸 English → [[✍️ Subject iniciado por verbo sem prefixo de tipo (EN)]]
 
 ## 🎯 Contexto
 El estándar **Conventional Commits** define tipos (`feat`, `fix`, `docs`, `test`, `chore`, `build`, `refactor`) normalmente escritos como prefijo literal: `feat: add authentication`. El plugin clasifica los cambios según esos tipos, pero debe decidir **cómo** aparece eso en el mensaje.

@@ -8,7 +8,7 @@ tags: [fluxo, application-idle, formcommit, etapa1]
 
 # 🔍 Flujo: Detección del diálogo de commit (Application.Idle)
 
-> 🇧🇷 Portugués → [[🔍 1 - Detecção do diálogo de commit]] · 🇺🇸 English → [[🔍 1 - Detecção do diálogo de commit (EN)]]
+> 🇧🇷 Portugués → [[🔍 1 - Detecção do diálogo de commit (PT)|🔍 1 - Detecção do diálogo de commit]] · 🇺🇸 English → [[🔍 1 - Detecção do diálogo de commit (EN)]]
 
 Cómo el plugin entra en el **diálogo de commit** de GitExtensions y rellena el mensaje, sin que el host ofrezca un evento de "diálogo abierto".
 

@@ -20,7 +20,7 @@ GitExtensions carrega plugins via **MEF** (Managed Extensibility Framework). O e
   - `GitExtensions.Extensibility.dll`
   - `System.ComponentModel.Composition.dll`
 - O `AssemblyName` precisa bater com o que `install.ps1` / nuspec esperam (`GitExtensions.Plugins.<Nome>`).
-- Para aparecer no **Plugin Manager** interno, o pacote NuGet precisa **depender** de `GitExtensions.Extensibility` (dependência marcadora). Ver [[🔗 Dependências]].
+- Para aparecer no **Plugin Manager** interno, o pacote NuGet precisa **depender** de `GitExtensions.Extensibility` (dependência marcadora). Ver [[🔗 Dependências (PT)|🔗 Dependências]].
 
 ## ♻️ Ciclo de vida do plugin
 - `Register(IGitUICommands)` — chamado ao carregar. Bom lugar para **capturar o `IGitUICommands`**, registrar templates de commit e assinar eventos da UI (aqui: `Application.Idle`).
@@ -30,7 +30,7 @@ GitExtensions carrega plugins via **MEF** (Managed Extensibility Framework). O e
 
 ## ⚙️ Como o ZimerfeldCommitMsg usa este modelo
 - Registra **três itens de template** de commit (um por idioma) via `CommitTemplateManager`.
-- Assina **`Application.Idle`** para detectar o `FormCommit` recém-aberto e preencher a mensagem — o host **não** expõe evento de "diálogo de commit aberto". Ver [[🔌 ZimerfeldCommitMsgPlugin]] e [[🔌 Integração via template dropdown e Application.Idle]].
+- Assina **`Application.Idle`** para detectar o `FormCommit` recém-aberto e preencher a mensagem — o host **não** expõe evento de "diálogo de commit aberto". Ver [[🔌 ZimerfeldCommitMsgPlugin (PT)|🔌 ZimerfeldCommitMsgPlugin]] e [[🔌 Integração via template dropdown e Application.Idle (PT)|🔌 Integração via template dropdown e Application.Idle]].
 - `Execute` gera a mensagem para o repo atual (menu Plugins).
 - `GetSettings` expõe o `ChoiceSetting` de idioma (Automático/PT/EN).
 
@@ -38,6 +38,6 @@ GitExtensions carrega plugins via **MEF** (Managed Extensibility Framework). O e
 - `GitExtensions.ZimerfeldLFS` e `GitExtensions.ZimerfeldTree` abrem **janelas próprias** (não-modais). Já o CommitMsg **não tem janela**: integra-se ao diálogo de commit existente do host.
 
 ## 🔗 Relacionado
-- [[📦 GitExtensions.ZimerfeldCommitMsg]]
-- [[🔌 ZimerfeldCommitMsgPlugin]]
-- [[🔗 Dependências]]
+- [[📦 GitExtensions.ZimerfeldCommitMsg (PT)|📦 GitExtensions.ZimerfeldCommitMsg]]
+- [[🔌 ZimerfeldCommitMsgPlugin (PT)|🔌 ZimerfeldCommitMsgPlugin]]
+- [[🔗 Dependências (PT)|🔗 Dependências]]

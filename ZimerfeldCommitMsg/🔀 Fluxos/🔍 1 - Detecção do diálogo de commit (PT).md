@@ -40,12 +40,12 @@ OnAppIdle  (dispara muitas vezes)
 - **Sem evento de API:** não existe "FormCommit aberto" na extensibilidade do GitExtensions. Por isso o plugin observa o **`Application.Idle`** da UI e procura o `FormCommit` em `Application.OpenForms` por **nome de tipo** (evita depender de tipos internos do host).
 - **Gates para não repetir:** `Application.Idle` dispara continuamente. O plugin guarda a **instância** já tratada (`WeakReference<Form>`, para não prender o form) e o **working dir** do último preenchimento. O host pode **reaproveitar** o mesmo `FormCommit` ao trocar de repositório — sem rastrear o working dir, o gate por instância bloquearia o repreenchimento e a caixa ficaria desatualizada.
 - **Working dir:** `ResolveCommitWorkingDir()` prefere o working dir do **próprio** `FormCommit` aberto (via reflection), com fallback ao `_gitUiCommands.Module.WorkingDir` capturado — mesma fonte de verdade da geração via dropdown, evitando gerar no repo errado.
-- **Auto-refresh ao stage/unstage:** como o diálogo permanece aberto, um novo `Idle` com a caixa ainda "nossa" regenera a mensagem quando o conjunto staged muda. Ver [[🌐 3 - Idioma e auto-refresh]].
+- **Auto-refresh ao stage/unstage:** como o diálogo permanece aberto, um novo `Idle` com a caixa ainda "nossa" regenera a mensagem quando o conjunto staged muda. Ver [[🌐 3 - Idioma e auto-refresh (PT)|🌐 3 - Idioma e auto-refresh]].
 - **Proteção:** tudo é best-effort em `try/catch` — exceções no plugin nunca derrubam o GitExtensions.
 
 ## 🔗 Ligações
 
-- [[⚙️ 2 - Geração da mensagem]]
-- [[🌐 3 - Idioma e auto-refresh]]
-- [[🔌 ZimerfeldCommitMsgPlugin]]
-- [[🔌 Integração via template dropdown e Application.Idle]]
+- [[⚙️ 2 - Geração da mensagem (PT)|⚙️ 2 - Geração da mensagem]]
+- [[🌐 3 - Idioma e auto-refresh (PT)|🌐 3 - Idioma e auto-refresh]]
+- [[🔌 ZimerfeldCommitMsgPlugin (PT)|🔌 ZimerfeldCommitMsgPlugin]]
+- [[🔌 Integração via template dropdown e Application.Idle (PT)|🔌 Integração via template dropdown e Application.Idle]]

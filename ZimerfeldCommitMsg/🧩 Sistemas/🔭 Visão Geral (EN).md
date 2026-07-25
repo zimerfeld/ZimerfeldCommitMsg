@@ -1,4 +1,4 @@
-﻿---
+---
 tipo: sistema
 projeto: GitExtensions.ZimerfeldCommitMsg
 lang: en-US
@@ -8,7 +8,7 @@ tags: [sistema, overview, plugin, gitextensions, commit-message, conventional-co
 
 # 🔭 Overview
 
-> 🇧🇷 Português → [[🔭 Visão Geral]] · 🇪🇸 Español → [[🔭 Visão Geral (ES)]]
+> 🇧🇷 Português → [[🔭 Visão Geral (PT)|🔭 Visão Geral]] · 🇪🇸 Español → [[🔭 Visão Geral (ES)]]
 
 ## 🎯 What it is
 

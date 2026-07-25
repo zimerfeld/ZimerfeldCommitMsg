@@ -24,7 +24,7 @@ Ponto de entrada do plugin e **integração com o diálogo de commit** do GitExt
 public sealed class ZimerfeldCommitMsgPlugin : GitPluginBase
 ```
 
-O atributo `[Export]` é o ponto de descoberta pelo MEF do host. Ver [[🧩 Plugin MEF para GitExtensions]].
+O atributo `[Export]` é o ponto de descoberta pelo MEF do host. Ver [[🧩 Plugin MEF para GitExtensions (PT)|🧩 Plugin MEF para GitExtensions]].
 
 ---
 
@@ -57,7 +57,7 @@ O atributo `[Export]` é o ponto de descoberta pelo MEF do host. Ver [[🧩 Plug
 EffectiveLanguage() = _sessionLanguage ?? CurrentLanguage();
 CurrentLanguage()   = MessageLanguageResolver.Resolve(_languageSetting.ValueOrDefault(Settings));
 ```
-A escolha do dropdown tem prioridade sobre o setting/SO. Ver [[🌐 Localization]] e [[🌐 3 - Idioma e auto-refresh]].
+A escolha do dropdown tem prioridade sobre o setting/SO. Ver [[🌐 Localization (PT)|🌐 Localization]] e [[🌐 3 - Idioma e auto-refresh (PT)|🌐 3 - Idioma e auto-refresh]].
 
 ---
 
@@ -71,11 +71,11 @@ A escolha do dropdown tem prioridade sobre o setting/SO. Ver [[🌐 Localization
 ### `OnAppIdle`
 - Varre `Application.OpenForms` por um `Form` cujo `GetType().Name == "FormCommit"`.
 - Gates por **instância** (`_handledCommitForm`) e por **working dir** (`_handledWorkingDir`).
-- Preenche a caixa de mensagem se vazia (**não destrutivo**); assina `TextChanged` para detectar a escolha do dropdown. Ver [[🔍 1 - Detecção do diálogo de commit]].
+- Preenche a caixa de mensagem se vazia (**não destrutivo**); assina `TextChanged` para detectar a escolha do dropdown. Ver [[🔍 1 - Detecção do diálogo de commit (PT)|🔍 1 - Detecção do diálogo de commit]].
 
 ### `GenerateForTemplate(MessageLanguage? forced)`
 - Gera a mensagem para um item do dropdown, no idioma do item.
-- **Não fixa o idioma aqui** (o host chama este `Func` para todos os itens ao abrir o dropdown). Em vez disso, `RememberTemplateMessage(msg, forced)` registra o texto → idioma para reconhecer depois qual item o usuário clicou (`DetectTemplateSelection`). Ver [[🔌 Integração via template dropdown e Application.Idle]].
+- **Não fixa o idioma aqui** (o host chama este `Func` para todos os itens ao abrir o dropdown). Em vez disso, `RememberTemplateMessage(msg, forced)` registra o texto → idioma para reconhecer depois qual item o usuário clicou (`DetectTemplateSelection`). Ver [[🔌 Integração via template dropdown e Application.Idle (PT)|🔌 Integração via template dropdown e Application.Idle]].
 
 ### `ResolveCommitWorkingDir()`
 - Prefere o working dir do próprio `FormCommit` aberto (via reflection), com fallback ao `_gitUiCommands.Module.WorkingDir` — evita gerar no repo errado/vazio.
@@ -96,8 +96,8 @@ Delegates, reflection sobre o `FormCommit` e a geração são envoltos em `try/c
 
 ## 🔗 Ligações
 
-- [[⚙️ CommitMessageGenerator]]
-- [[🌐 Localization]]
-- [[🏗️ Arquitetura]]
-- [[🔌 Integração via template dropdown e Application.Idle]]
-- [[🔍 1 - Detecção do diálogo de commit]]
+- [[⚙️ CommitMessageGenerator (PT)|⚙️ CommitMessageGenerator]]
+- [[🌐 Localization (PT)|🌐 Localization]]
+- [[🏗️ Arquitetura (PT)|🏗️ Arquitetura]]
+- [[🔌 Integração via template dropdown e Application.Idle (PT)|🔌 Integração via template dropdown e Application.Idle]]
+- [[🔍 1 - Detecção do diálogo de commit (PT)|🔍 1 - Detecção do diálogo de commit]]

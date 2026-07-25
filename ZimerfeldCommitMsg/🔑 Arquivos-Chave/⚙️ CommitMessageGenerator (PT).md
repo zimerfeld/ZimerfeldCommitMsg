@@ -22,7 +22,7 @@ O **motor** do plugin: transforma o `git diff --cached` em uma mensagem de commi
 ```csharp
 new CommitMessageGenerator(workingDir, language).Generate()
 ```
-Carrega o [[📓 RepoVocabularyConfig]] (`.zimerfeldcommitmsg.json`) do `workingDir` e o `LanguagePack` do idioma. Ver [[🌐 Localization]].
+Carrega o [[📓 RepoVocabularyConfig (PT)|📓 RepoVocabularyConfig]] (`.zimerfeldcommitmsg.json`) do `workingDir` e o `LanguagePack` do idioma. Ver [[🌐 Localization (PT)|🌐 Localization]].
 
 ---
 
@@ -71,14 +71,14 @@ Carrega o [[📓 RepoVocabularyConfig]] (`.zimerfeldcommitmsg.json`) do `working
 
 ## 🧪 Testes
 
-`CommentExtractionTests`, `ConceptExtractionTests`, `TranslationTests`, `RepoVocabularyConfigTests` cobrem as funções puras acima. Ver [[🏷️ Versionamento]].
+`CommentExtractionTests`, `ConceptExtractionTests`, `TranslationTests`, `RepoVocabularyConfigTests` cobrem as funções puras acima. Ver [[🏷️ Versionamento (PT)|🏷️ Versionamento]].
 
 ---
 
 ## 🔗 Ligações
 
-- [[⚙️ Geração de mensagem a partir do diff]]
-- [[📜 Conventional Commits - Conceitos]]
-- [[📓 RepoVocabularyConfig]] · [[🌐 Localization]]
-- [[⚙️ 2 - Geração da mensagem]]
-- [[🔀 Duas estratégias - comentários e nomes de arquivo]]
+- [[⚙️ Geração de mensagem a partir do diff (PT)|⚙️ Geração de mensagem a partir do diff]]
+- [[📜 Conventional Commits - Conceitos (PT)|📜 Conventional Commits - Conceitos]]
+- [[📓 RepoVocabularyConfig (PT)|📓 RepoVocabularyConfig]] · [[🌐 Localization (PT)|🌐 Localization]]
+- [[⚙️ 2 - Geração da mensagem (PT)|⚙️ 2 - Geração da mensagem]]
+- [[🔀 Duas estratégias - comentários e nomes de arquivo (PT)|🔀 Duas estratégias - comentários e nomes de arquivo]]

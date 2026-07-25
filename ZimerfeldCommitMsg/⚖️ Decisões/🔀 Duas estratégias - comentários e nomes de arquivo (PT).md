@@ -19,7 +19,7 @@ Usar **duas estratégias complementares**, com prioridade:
 1. **Comentários do diff (principal):** ler as linhas `+`/`-` do `git diff --cached` e extrair comentários em várias sintaxes (`//`, `///`, `/* */`, `/** */`, JSDoc `* `, `<!-- -->`, SQL/Lua `--`, VB `'`, `#`). O melhor comentário por arquivo é traduzido (quando pt-BR), saneado e recortado na cláusula principal.
 2. **Nomes de arquivo (fallback):** quando não há comentário útil, derivar o **conceito** do nome removendo sufixos semânticos (`Service`, `Controller`, `Tests`, …) e traduzindo palavras.
 
-Ambas se apoiam no **vocabulário por repositório** (`.zimerfeldcommitmsg.json`) para termos do domínio. Ver [[📓 Vocabulário por repositório]].
+Ambas se apoiam no **vocabulário por repositório** (`.zimerfeldcommitmsg.json`) para termos do domínio. Ver [[📓 Vocabulário por repositório (PT)|📓 Vocabulário por repositório]].
 
 ## 🔀 Alternativas consideradas
 - **Só nomes de arquivo** — barato, mas genérico e pouco informativo.
@@ -36,7 +36,7 @@ Ambas se apoiam no **vocabulário por repositório** (`.zimerfeldcommitmsg.json`
 - Tradução EN→PT é heurística (dicionários), não perfeita.
 
 ## 🔗 Relacionado
-- [[📓 Vocabulário por repositório]]
-- [[⚙️ Geração de mensagem a partir do diff]]
-- [[⚙️ CommitMessageGenerator]]
-- [[⚙️ 2 - Geração da mensagem]]
+- [[📓 Vocabulário por repositório (PT)|📓 Vocabulário por repositório]]
+- [[⚙️ Geração de mensagem a partir do diff (PT)|⚙️ Geração de mensagem a partir do diff]]
+- [[⚙️ CommitMessageGenerator (PT)|⚙️ CommitMessageGenerator]]
+- [[⚙️ 2 - Geração da mensagem (PT)|⚙️ 2 - Geração da mensagem]]

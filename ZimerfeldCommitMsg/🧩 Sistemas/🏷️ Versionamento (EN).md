@@ -1,4 +1,4 @@
-﻿---
+---
 tipo: sistema
 projeto: GitExtensions.ZimerfeldCommitMsg
 lang: en-US
@@ -8,7 +8,7 @@ tags: [build, versão, nupkg, deploy]
 
 # 🏷️ Versioning and Build
 
-> 🇧🇷 Português → [[🏷️ Versionamento]] · 🇪🇸 Español → [[🏷️ Versionamento (ES)]]
+> 🇧🇷 Português → [[🏷️ Versionamento (PT)|🏷️ Versionamento]] · 🇪🇸 Español → [[🏷️ Versionamento (ES)]]
 
 ## 🔢 Version scheme
 

@@ -20,7 +20,7 @@ Ler um arquivo **opcional** `.zimerfeldcommitmsg.json` na raiz do working dir, c
 - `rejectedVocabulary` — palavras que forçam a rejeição do nome como conceito.
 - `concepts` — tradução palavra-de-conceito → frase pt-BR (prioridade sobre o dicionário embutido).
 
-Falhas de leitura/parse são **silenciosas** (config vazia) — nunca quebram a geração. Ver [[📓 RepoVocabularyConfig]].
+Falhas de leitura/parse são **silenciosas** (config vazia) — nunca quebram a geração. Ver [[📓 RepoVocabularyConfig (PT)|📓 RepoVocabularyConfig]].
 
 ## 🔀 Alternativas consideradas
 - **Só vocabulário embutido** — não escala para o jargão de cada projeto; exigiria recompilar.
@@ -37,6 +37,6 @@ Falhas de leitura/parse são **silenciosas** (config vazia) — nunca quebram a 
 - Sem validação/feedback explícito de erro (por design — silencioso).
 
 ## 🔗 Relacionado
-- [[📓 RepoVocabularyConfig]]
-- [[🔀 Duas estratégias - comentários e nomes de arquivo]]
-- [[⚙️ Geração de mensagem a partir do diff]]
+- [[📓 RepoVocabularyConfig (PT)|📓 RepoVocabularyConfig]]
+- [[🔀 Duas estratégias - comentários e nomes de arquivo (PT)|🔀 Duas estratégias - comentários e nomes de arquivo]]
+- [[⚙️ Geração de mensagem a partir do diff (PT)|⚙️ Geração de mensagem a partir do diff]]

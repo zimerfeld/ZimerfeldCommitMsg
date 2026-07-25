@@ -9,7 +9,7 @@ arquivo: src/GitExtensions.ZimerfeldCommitMsg/CommitMessageGenerator.cs
 
 # ⚙️ CommitMessageGenerator.cs
 
-> 🇧🇷 Portugués → [[⚙️ CommitMessageGenerator]] · 🇺🇸 English → [[⚙️ CommitMessageGenerator (EN)]]
+> 🇧🇷 Portugués → [[⚙️ CommitMessageGenerator (PT)|⚙️ CommitMessageGenerator]] · 🇺🇸 English → [[⚙️ CommitMessageGenerator (EN)]]
 
 El **motor** del plugin: convierte el `git diff --cached` en un mensaje de commit (subject + cuerpo). ~1237 líneas, en su mayoría funciones puras testeables (`internal`, expuestas por `InternalsVisibleTo`).
 

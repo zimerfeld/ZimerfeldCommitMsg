@@ -12,7 +12,7 @@ repo: C:\GitExtensions\GitExtensions.ZimerfeldCommitMsg
 
 # 📦 GitExtensions.ZimerfeldCommitMsg
 
-> 🇧🇷 Portugués → [[📦 GitExtensions.ZimerfeldCommitMsg]] · 🇺🇸 English → [[📦 GitExtensions.ZimerfeldCommitMsg (EN)]]
+> 🇧🇷 Portugués → [[📦 GitExtensions.ZimerfeldCommitMsg (PT)|📦 GitExtensions.ZimerfeldCommitMsg]] · 🇺🇸 English → [[📦 GitExtensions.ZimerfeldCommitMsg (EN)]]
 
 ## 🎯 Objetivo
 Plugin para **[GitExtensions](https://gitextensions.github.io/)** que **genera mensajes de commit automáticamente** analizando el **contenido real** de los cambios en stage (no solo los nombres de archivo). Los cambios se clasifican por los tipos de **Conventional Commits** (`feat`/`fix`/`docs`/`test`/`chore`/`build`/`refactor`) para elegir el **verbo** adecuado; el mensaje es un **subject iniciado por verbo** (sin el prefijo literal `tipo:`) más un **cuerpo en viñetas**. Ver [[📜 Conventional Commits - Conceitos (ES)|Conventional Commits - Conceptos]].

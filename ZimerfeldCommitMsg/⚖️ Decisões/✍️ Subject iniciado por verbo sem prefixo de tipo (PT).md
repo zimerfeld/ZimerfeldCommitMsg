@@ -36,6 +36,6 @@ Exemplos:
 - A qualidade depende do mapeamento tipo → verbo no `LanguagePack`.
 
 ## 🔗 Relacionado
-- [[📜 Conventional Commits - Conceitos]]
-- [[⚙️ CommitMessageGenerator]]
-- [[⚙️ 2 - Geração da mensagem]]
+- [[📜 Conventional Commits - Conceitos (PT)|📜 Conventional Commits - Conceitos]]
+- [[⚙️ CommitMessageGenerator (PT)|⚙️ CommitMessageGenerator]]
+- [[⚙️ 2 - Geração da mensagem (PT)|⚙️ 2 - Geração da mensagem]]

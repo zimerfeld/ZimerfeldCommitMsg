@@ -38,27 +38,27 @@ RepoVocabularyConfig  ← .zimerfeldcommitmsg.json (vocabulário extra por repo)
 ## 🧩 As classes
 
 ### 🔌 `ZimerfeldCommitMsgPlugin` — ponto de entrada e integração
-Herda de `GitPluginBase`, exportado via MEF. Responsável por **entrar no diálogo de commit** do host e injetar a mensagem. Ver [[🔌 ZimerfeldCommitMsgPlugin]].
+Herda de `GitPluginBase`, exportado via MEF. Responsável por **entrar no diálogo de commit** do host e injetar a mensagem. Ver [[🔌 ZimerfeldCommitMsgPlugin (PT)|🔌 ZimerfeldCommitMsgPlugin]].
 - **`Register`** — captura o `IGitUICommands` e o `SynchronizationContext` (UI thread), registra os **três itens de template** de commit (um por idioma) e assina **`Application.Idle`**.
 - **`OnAppIdle`** — detecta o `FormCommit` recém-aberto (não há evento de API), gera a mensagem e preenche a caixa; faz gates por **instância** (`WeakReference<Form>`) e por **working dir** para não reprocessar a cada tick, e **detecta a escolha do dropdown** observando o `TextChanged` da caixa.
 - **`Execute`** — gera a mensagem para o repositório atual (acionado pelo menu Plugins).
 - **`GetSettings`** — expõe o `ChoiceSetting` de idioma (Automático / Português / Inglês).
 
 ### ⚙️ `CommitMessageGenerator` — o motor
-Lê o `git diff --cached`, classifica os arquivos por **categoria semântica** (extensão → source/web/docs/build/config) e por **tipo Conventional Commits**, extrai **comentários** do diff e deriva **conceitos** dos nomes de arquivo, e monta o **subject consolidado** + o **corpo em bullets**. ~1200 linhas de funções em sua maioria puras (testáveis via `InternalsVisibleTo`). Ver [[⚙️ CommitMessageGenerator]] e [[⚙️ Geração de mensagem a partir do diff]].
+Lê o `git diff --cached`, classifica os arquivos por **categoria semântica** (extensão → source/web/docs/build/config) e por **tipo Conventional Commits**, extrai **comentários** do diff e deriva **conceitos** dos nomes de arquivo, e monta o **subject consolidado** + o **corpo em bullets**. ~1200 linhas de funções em sua maioria puras (testáveis via `InternalsVisibleTo`). Ver [[⚙️ CommitMessageGenerator (PT)|⚙️ CommitMessageGenerator]] e [[⚙️ Geração de mensagem a partir do diff (PT)|⚙️ Geração de mensagem a partir do diff]].
 
 ### 🌐 `Localization` — idioma da saída + strings de UI
 - `MessageLanguage` (`PtBr`/`En`) + `MessageLanguageResolver` (resolve "Automático" pelo `CultureInfo.CurrentUICulture`).
 - `LanguagePack` — verbos, palavras de tipo, pluralização, etc., por idioma (usado pelo gerador).
-- `Strings` — strings de UI (avisos) lidas dos recursos embutidos `Strings.resx`/`StringsPtBr.resx`. Ver [[🌐 Localization]].
+- `Strings` — strings de UI (avisos) lidas dos recursos embutidos `Strings.resx`/`StringsPtBr.resx`. Ver [[🌐 Localization (PT)|🌐 Localization]].
 
 ### 📓 `RepoVocabularyConfig` — extensão por repositório
-Carrega `.zimerfeldcommitmsg.json` da raiz do working dir (opcional): `knownVocabulary`, `rejectedVocabulary`, `concepts`. Somado aos defaults embutidos, sem recompilar. Falhas de parse são silenciosas. Ver [[📓 RepoVocabularyConfig]].
+Carrega `.zimerfeldcommitmsg.json` da raiz do working dir (opcional): `knownVocabulary`, `rejectedVocabulary`, `concepts`. Somado aos defaults embutidos, sem recompilar. Falhas de parse são silenciosas. Ver [[📓 RepoVocabularyConfig (PT)|📓 RepoVocabularyConfig]].
 
 ## 🔌 Integração com o host
 
 > [!important] O plugin **preenche** o diálogo de commit sem depender de um evento dedicado
-> O GitExtensions não expõe "diálogo de commit aberto" na API, então o plugin observa o `FormCommit` via **`Application.Idle`**. A escolha de um item do **dropdown de templates** é reconhecida indiretamente — o host materializa o texto de **todos** os itens ao abrir o dropdown e, no clique, só aplica o texto; o plugin registra cada texto gerado (msg → idioma) e detecta pela caixa qual foi escolhido (`TextChanged`). Ver [[🔌 Integração via template dropdown e Application.Idle]].
+> O GitExtensions não expõe "diálogo de commit aberto" na API, então o plugin observa o `FormCommit` via **`Application.Idle`**. A escolha de um item do **dropdown de templates** é reconhecida indiretamente — o host materializa o texto de **todos** os itens ao abrir o dropdown e, no clique, só aplica o texto; o plugin registra cada texto gerado (msg → idioma) e detecta pela caixa qual foi escolhido (`TextChanged`). Ver [[🔌 Integração via template dropdown e Application.Idle (PT)|🔌 Integração via template dropdown e Application.Idle]].
 
 O preenchimento é **não destrutivo**: se a caixa já tem texto digitado pelo usuário, o plugin não sobrescreve.
 
@@ -66,7 +66,7 @@ O preenchimento é **não destrutivo**: se a caixa já tem texto digitado pelo u
 
 Dois eixos independentes:
 1. **Idioma da mensagem** — `EffectiveLanguage()` = escolha do dropdown (`_sessionLanguage`) tem prioridade sobre o setting/SO (`CurrentLanguage()`), que resolve "Automático" pelo `CultureInfo.CurrentUICulture`.
-2. **Strings de UI** — lidas por `Strings` dos recursos neutros embutidos (`InvariantCulture` evita probing de satellite assemblies). Ver [[🌐 Localization]] e [[📦 Strings embutidas sem satellite assemblies]].
+2. **Strings de UI** — lidas por `Strings` dos recursos neutros embutidos (`InvariantCulture` evita probing de satellite assemblies). Ver [[🌐 Localization (PT)|🌐 Localization]] e [[📦 Strings embutidas sem satellite assemblies (PT)|📦 Strings embutidas sem satellite assemblies]].
 
 ## 🧵 Threading
 
@@ -75,9 +75,9 @@ Dois eixos independentes:
 
 ## 🔗 Ligações
 
-- [[🔌 ZimerfeldCommitMsgPlugin]]
-- [[⚙️ CommitMessageGenerator]]
-- [[🌐 Localization]]
-- [[🔌 Integração via template dropdown e Application.Idle]]
-- [[✍️ Subject iniciado por verbo sem prefixo de tipo]]
-- [[🔗 Dependências]]
+- [[🔌 ZimerfeldCommitMsgPlugin (PT)|🔌 ZimerfeldCommitMsgPlugin]]
+- [[⚙️ CommitMessageGenerator (PT)|⚙️ CommitMessageGenerator]]
+- [[🌐 Localization (PT)|🌐 Localization]]
+- [[🔌 Integração via template dropdown e Application.Idle (PT)|🔌 Integração via template dropdown e Application.Idle]]
+- [[✍️ Subject iniciado por verbo sem prefixo de tipo (PT)|✍️ Subject iniciado por verbo sem prefixo de tipo]]
+- [[🔗 Dependências (PT)|🔗 Dependências]]

@@ -48,11 +48,11 @@ Auto-refresh passa a usar EffectiveLanguage() = _sessionLanguage (prioridade sob
 ```
 
 > [!note] Por que a detecção é indireta
-> A API de template do host **não** dá callback de clique: ele chama o `Func` de **todos** os itens ao **abrir** o dropdown e, no clique, só aplica o texto já materializado. Se o plugin fixasse o idioma dentro do `Func`, ele rodaria para todos os itens e fixaria sempre o último. Por isso o plugin **registra cada texto gerado** (msg → idioma) e reconhece a escolha observando a caixa (`TextChanged`). Ver [[🔌 Integração via template dropdown e Application.Idle]].
+> A API de template do host **não** dá callback de clique: ele chama o `Func` de **todos** os itens ao **abrir** o dropdown e, no clique, só aplica o texto já materializado. Se o plugin fixasse o idioma dentro do `Func`, ele rodaria para todos os itens e fixaria sempre o último. Por isso o plugin **registra cada texto gerado** (msg → idioma) e reconhece a escolha observando a caixa (`TextChanged`). Ver [[🔌 Integração via template dropdown e Application.Idle (PT)|🔌 Integração via template dropdown e Application.Idle]].
 
 ## 🔄 Auto-refresh ao stage/unstage
 
-Com o diálogo aberto, quando arquivos entram/saem do stage, o próximo `Application.Idle` regenera a mensagem no idioma efetivo (`EffectiveLanguage()`), desde que a caixa ainda seja "nossa" (não editada manualmente). Ver [[🔍 1 - Detecção do diálogo de commit]].
+Com o diálogo aberto, quando arquivos entram/saem do stage, o próximo `Application.Idle` regenera a mensagem no idioma efetivo (`EffectiveLanguage()`), desde que a caixa ainda seja "nossa" (não editada manualmente). Ver [[🔍 1 - Detecção do diálogo de commit (PT)|🔍 1 - Detecção do diálogo de commit]].
 
 ## 🗣️ Idioma efetivo
 
@@ -64,7 +64,7 @@ CurrentLanguage()   = setting (Automático/PT/EN) → MessageLanguageResolver.Re
 
 ## 🔗 Ligações
 
-- [[🔍 1 - Detecção do diálogo de commit]]
-- [[⚙️ 2 - Geração da mensagem]]
-- [[🌐 Localization]]
-- [[🔌 ZimerfeldCommitMsgPlugin]]
+- [[🔍 1 - Detecção do diálogo de commit (PT)|🔍 1 - Detecção do diálogo de commit]]
+- [[⚙️ 2 - Geração da mensagem (PT)|⚙️ 2 - Geração da mensagem]]
+- [[🌐 Localization (PT)|🌐 Localization]]
+- [[🔌 ZimerfeldCommitMsgPlugin (PT)|🔌 ZimerfeldCommitMsgPlugin]]

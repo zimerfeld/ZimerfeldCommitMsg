@@ -23,7 +23,7 @@ Compila em Release, faz deploy da DLL em `C:\Program Files\GitExtensions\Plugins
 
 ## ⚙️ O que o script faz (em ordem)
 
-`build.ps1` (detalhe em [[🛠️ build.ps1]] e [[🏷️ Versionamento]]):
+`build.ps1` (detalhe em [[🛠️ build.ps1 (PT)|🛠️ build.ps1]] e [[🏷️ Versionamento (PT)|🏷️ Versionamento]]):
 1. Lê a versão atual do `.nuspec` e calcula `newVersion` (build +1).
 2. Detecta mudanças (fontes/docs mais novos que o último `.nupkg`); sem `-Force` e sem mudança → mantém a versão e sai.
 3. Fecha o GitExtensions se estiver em execução (libera a DLL).
@@ -64,7 +64,7 @@ Suíte **xUnit**: extração de comentários, derivação de conceitos, `.zimerf
 - **Plugin não aparece:** confirme a DLL em `C:\Program Files\GitExtensions\Plugins\` e **reinicie** o GitExtensions. O nó em Configurações → Plugins só aparece após reiniciar.
 
 ## 🔗 Ligações
-- [[🚀 Deploy em Produção (Prod)]]
-- [[🛠️ build.ps1]]
-- [[🏷️ Versionamento]]
-- [[📖 README — Instalação, Uso e Build]]
+- [[🚀 Deploy em Produção (Prod) (PT)|🚀 Deploy em Produção (Prod)]]
+- [[🛠️ build.ps1 (PT)|🛠️ build.ps1]]
+- [[🏷️ Versionamento (PT)|🏷️ Versionamento]]
+- [[📖 README — Instalação, Uso e Build (PT)|📖 README — Instalação, Uso e Build]]

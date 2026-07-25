@@ -29,7 +29,7 @@ Pasta de localização — dois eixos: **idioma da mensagem gerada** e **strings
 
 ## 📦 `LanguagePack.cs`
 
-Tabelas por idioma usadas pelo [[⚙️ CommitMessageGenerator]]: verbos por tipo Conventional Commits, pluralização (`FilesWord`), palavra de "arquivo(s)", conectores, etc. ~418 linhas. É o que faz a **mesma lógica** produzir saída em pt-BR ou inglês.
+Tabelas por idioma usadas pelo [[⚙️ CommitMessageGenerator (PT)|⚙️ CommitMessageGenerator]]: verbos por tipo Conventional Commits, pluralização (`FilesWord`), palavra de "arquivo(s)", conectores, etc. ~418 linhas. É o que faz a **mesma lógica** produzir saída em pt-BR ou inglês.
 
 ---
 
@@ -48,19 +48,19 @@ Strings.PluginDescription(lang)  // descrição do plugin (menu)
 - A seleção é pelo **idioma resolvido**, não pela cultura global da thread → o override manual é honrado.
 
 > [!note] Deploy de DLL única
-> Os `.resx` são embutidos com `LogicalName` fixo no `.csproj`, para o MSBuild não os desviar para satellite assemblies. Ver [[📦 Strings embutidas sem satellite assemblies]] e [[🏷️ Versionamento]].
+> Os `.resx` são embutidos com `LogicalName` fixo no `.csproj`, para o MSBuild não os desviar para satellite assemblies. Ver [[📦 Strings embutidas sem satellite assemblies (PT)|📦 Strings embutidas sem satellite assemblies]] e [[🏷️ Versionamento (PT)|🏷️ Versionamento]].
 
 ---
 
 ## 🗣️ Idioma efetivo (no plugin)
 
-`EffectiveLanguage() = _sessionLanguage ?? CurrentLanguage()` — escolha do dropdown tem prioridade sobre o setting/SO. Ver [[🔌 ZimerfeldCommitMsgPlugin]] e [[🌐 3 - Idioma e auto-refresh]].
+`EffectiveLanguage() = _sessionLanguage ?? CurrentLanguage()` — escolha do dropdown tem prioridade sobre o setting/SO. Ver [[🔌 ZimerfeldCommitMsgPlugin (PT)|🔌 ZimerfeldCommitMsgPlugin]] e [[🌐 3 - Idioma e auto-refresh (PT)|🌐 3 - Idioma e auto-refresh]].
 
 ---
 
 ## 🔗 Ligações
 
-- [[🔌 ZimerfeldCommitMsgPlugin]]
-- [[⚙️ CommitMessageGenerator]]
-- [[🏗️ Arquitetura]]
-- [[📦 Strings embutidas sem satellite assemblies]]
+- [[🔌 ZimerfeldCommitMsgPlugin (PT)|🔌 ZimerfeldCommitMsgPlugin]]
+- [[⚙️ CommitMessageGenerator (PT)|⚙️ CommitMessageGenerator]]
+- [[🏗️ Arquitetura (PT)|🏗️ Arquitetura]]
+- [[📦 Strings embutidas sem satellite assemblies (PT)|📦 Strings embutidas sem satellite assemblies]]

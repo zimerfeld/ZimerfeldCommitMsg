@@ -8,7 +8,7 @@ tags: [sistema, overview, plugin, gitextensions, commit-message, conventional-co
 
 # 🔭 Visión General
 
-> 🇧🇷 Portugués → [[🔭 Visão Geral]] · 🇺🇸 English → [[🔭 Visão Geral (EN)]]
+> 🇧🇷 Portugués → [[🔭 Visão Geral (PT)|🔭 Visão Geral]] · 🇺🇸 English → [[🔭 Visão Geral (EN)]]
 
 ## 🎯 Qué es
 
