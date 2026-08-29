@@ -15,7 +15,7 @@ GitExtensions carrega plugins via **MEF** (Managed Extensibility Framework). O e
 
 ## 🔑 Pontos-chave
 - Exportar com `[Export(typeof(IGitPlugin))]` usando `System.ComponentModel.Composition`.
-- Projeto compila como **`Library`** (DLL), `net9.0-windows`, WinForms habilitado.
+- Projeto compila como **`Library`** (DLL), `net10.0-windows`, WinForms habilitado.
 - Referenciar os assemblies do host com **`<Private>false</Private>`** (não copiar para a saída — o host já os tem). Aqui eles ficam **versionados em `refs\`** (build determinístico e offline):
   - `GitExtensions.Extensibility.dll`
   - `System.ComponentModel.Composition.dll`

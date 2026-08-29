@@ -39,7 +39,7 @@ tags: [fatos-chave, referencia, meta]
 - Datas: `AAAA-MM-DD`
 - **Este projeto** é um **plugin MEF de GitExtensions** que **gera mensagens de commit** a partir do conteúdo real do diff em stage, classificando as mudanças por **Conventional Commits** para escolher o **verbo** — o subject começa por verbo, **sem** o prefixo literal `tipo:`. Ver [[📦 GitExtensions.ZimerfeldCommitMsg (PT)|📦 GitExtensions.ZimerfeldCommitMsg]] e [[📜 Conventional Commits - Conceitos (PT)|📜 Conventional Commits - Conceitos]]
 - Saída **bilíngue** (pt-BR / inglês): automática pelo SO + override manual (setting e dropdown de templates)
-- Requisito de runtime: **GitExtensions 6.x (.NET 9)** — o plugin roda `git diff --cached` para ler o stage
+- Requisito de runtime: **GitExtensions 7.x (.NET 10)** — o plugin roda `git diff --cached` para ler o stage
 - Versionamento `major.minor.BUILD`, build incrementado automaticamente pelo `build.ps1`
 - Licença: **CC BY-NC-ND 4.0 © 2026 Zimerfeld**
 - Commits co-authored quando solicitado push

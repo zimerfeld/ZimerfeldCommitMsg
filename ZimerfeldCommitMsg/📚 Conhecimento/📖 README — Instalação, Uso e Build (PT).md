@@ -55,7 +55,7 @@ Exemplo lado a lado:
 > O nó **ZimerfeldCommitMsg** só aparece em **Configurações → Plugins** depois que a DLL com o seletor de idioma é instalada e o GitExtensions é reiniciado.
 
 ## ✅ Requisitos
-- GitExtensions 6.x (.NET 9)
+- GitExtensions 7.x (.NET 10)
 - `git` no `PATH` (o gerador roda `git diff --cached`)
 
 ## 🛠️ Build

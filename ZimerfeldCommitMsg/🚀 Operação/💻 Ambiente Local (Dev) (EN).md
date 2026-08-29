@@ -29,7 +29,7 @@ Compiles in Release, deploys the DLL to `C:\Program Files\GitExtensions\Plugins\
 3. Closes GitExtensions if it is running (releases the DLL).
 4. Stamps version + date into the READMEs and vault notes; bumps the `.nuspec`/`.csproj`.
 5. `dotnet build -c Release`.
-6. Copies the DLL to `C:\Program Files\GitExtensions\Plugins\` (Admin) and to `tools\net9.0-windows\`.
+6. Copies the DLL to `C:\Program Files\GitExtensions\Plugins\` (Admin) and to `tools\net10.0-windows\`.
 7. `nuget pack` → `.nupkg` at the root (filters the NU5101 warning) and removes old `.nupkg` files.
 
 ## 🧰 Manual install (alternative to build.ps1)
@@ -50,9 +50,9 @@ dotnet test tests\GitExtensions.ZimerfeldCommitMsg.Tests
 
 ## 🚦 Flags and requirements
 - `-Force` — recompiles/repackages even without a detected change.
-- **.NET 9 SDK** (`dotnet`) required.
+- **.NET 10 SDK** (`dotnet`) required.
 - **Administrator** required for the deploy to `C:\Program Files\GitExtensions\Plugins\`. Without Admin, the deploy step is skipped with a warning.
-- **GitExtensions 6.x (.NET 9)** installed; `git` on the `PATH`.
+- **GitExtensions 7.x (.NET 10)** installed; `git` on the `PATH`.
 
 ## 🔀 Rules it respects (GitFlow)
 - Development on a **feature branch**; do not commit/push without an explicit request.

@@ -39,7 +39,7 @@ tags: [fatos-chave, referencia, meta]
 - Dates: `YYYY-MM-DD`
 - **This project** is a **GitExtensions MEF plugin** that **generates commit messages** from the real staged diff content, classifying changes by **Conventional Commits** to choose the **verb** — the subject starts with a verb, **without** the literal `type:` prefix. See [[📦 GitExtensions.ZimerfeldCommitMsg (EN)|GitExtensions.ZimerfeldCommitMsg]] and [[📜 Conventional Commits - Conceitos (EN)|Conventional Commits - Concepts]]
 - **Bilingual** output (pt-BR / English): automatic from the OS + manual override (setting and templates dropdown)
-- Runtime requirement: **GitExtensions 6.x (.NET 9)** — the plugin runs `git diff --cached` to read the stage
+- Runtime requirement: **GitExtensions 7.x (.NET 10)** — the plugin runs `git diff --cached` to read the stage
 - Versioning `major.minor.BUILD`, build auto-incremented by `build.ps1`
 - License: **CC BY-NC-ND 4.0 © 2026 Zimerfeld**
 - Co-authored commits when a push is requested

@@ -24,7 +24,7 @@ Script de **build + versionamento + deploy + empacotamento** do plugin.
 3. **Fecha o GitExtensions** se estiver em execução (libera a DLL para deploy).
 4. **Carimba versão + data nos docs PRIMEIRO** (READMEs e cofre Obsidian), depois dá o bump na fonte da verdade (`.nuspec`/`.csproj`) — assim os docs já refletem a nova versão.
 5. **`dotnet build -c Release`**.
-6. **Deploy** — copia a DLL para `C:\Program Files\GitExtensions\Plugins\` (requer Admin) e para `tools\net9.0-windows\` (para o nupkg).
+6. **Deploy** — copia a DLL para `C:\Program Files\GitExtensions\Plugins\` (requer Admin) e para `tools\net10.0-windows\` (para o nupkg).
 7. **`nuget pack`** → `.nupkg` na raiz (filtra o aviso **NU5101** de propósito) e remove `.nupkg` antigos.
 
 ---
@@ -55,7 +55,7 @@ Substitui `versao: …` no frontmatter e as ocorrências de `**X.Y.Z**` / `` `X.
 .\build.ps1 -Force   # sempre recompila/empacota
 ```
 
-Requer **.NET 9 SDK** e, para o deploy em `Program Files`, **Administrador**.
+Requer **.NET 10 SDK** e, para o deploy em `Program Files`, **Administrador**.
 
 ---
 

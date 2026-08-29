@@ -36,7 +36,7 @@ C:\GitExtensions\GitExtensions.ZimerfeldCommitMsg\
 ├─ tests\GitExtensions.ZimerfeldCommitMsg.Tests\  # xUnit: comentários, conceitos, vocab, tradução
 ├─ refs\                                        # DLLs do host versionadas (build determinístico)
 ├─ tools\                                       # install/uninstall/update-dll .ps1, nuget.exe, generate-icon.ps1
-│   └─ net9.0-windows\                          # saída do build (DLL) usada pelo nupkg
+│   └─ net10.0-windows\                          # saída do build (DLL) usada pelo nupkg
 ├─ ZimerfeldCommitMsg\                          # 🧠 este cofre de memória
 ├─ build.ps1                                    # incrementa versão + build + deploy + nupkg
 ├─ README.md / README.pt-BR.md / README.en-US.md  # espelhado em [[📖 README — Instalação, Uso e Build (PT)|📖 README — Instalação, Uso e Build]]
@@ -44,7 +44,7 @@ C:\GitExtensions\GitExtensions.ZimerfeldCommitMsg\
 ```
 
 ## ⚙️ Stack técnica
-- **Linguagem:** C# (`net9.0-windows`), `Nullable` + `ImplicitUsings` habilitados
+- **Linguagem:** C# (`net10.0-windows`), `Nullable` + `ImplicitUsings` habilitados
 - **UI:** WinForms (`UseWindowsForms`) — o plugin **não tem janela própria**; integra-se ao **diálogo de commit** do host
 - **Tipo de saída:** `Library` (DLL carregada pelo GitExtensions)
 - **AssemblyName:** `GitExtensions.Plugins.ZimerfeldCommitMsg`

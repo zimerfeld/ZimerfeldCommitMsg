@@ -18,8 +18,8 @@ Plugin para **GitExtensions** (Windows) que **gera a mensagem de commit automati
 
 | Item | Valor |
 |---|---|
-| Linguagem | C# (.NET 9) |
-| Target | `net9.0-windows` |
+| Linguagem | C# (.NET 10) |
+| Target | `net10.0-windows` |
 | UI Framework | Windows Forms (`UseWindowsForms`) — sem janela própria; integra ao diálogo de commit |
 | Tipo de saída | `Library` (DLL carregada pelo GitExtensions) |
 | Assembly de saída | `GitExtensions.Plugins.ZimerfeldCommitMsg.dll` |
@@ -63,7 +63,7 @@ Ver [[⚙️ Geração de mensagem a partir do diff (PT)|⚙️ Geração de men
 
 ## ✅ Requisitos de runtime
 
-- **GitExtensions 6.x** (.NET 9)
+- **GitExtensions 7.x** (.NET 10)
 - **`git`** no `PATH` (o gerador roda `git diff --cached`)
 
 ## 🔗 Ligações

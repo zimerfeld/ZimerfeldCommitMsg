@@ -55,7 +55,7 @@ Side-by-side example:
 > The **ZimerfeldCommitMsg** node only appears in **Settings → Plugins** after the DLL with the language selector is installed and GitExtensions is restarted.
 
 ## ✅ Requirements
-- GitExtensions 6.x (.NET 9)
+- GitExtensions 7.x (.NET 10)
 - `git` on the `PATH` (the generator runs `git diff --cached`)
 
 ## 🛠️ Build
