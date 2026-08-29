@@ -2,17 +2,17 @@
 tipo: negocio
 projeto: GitExtensions.ZimerfeldCommitMsg
 lang: en-US
-atualizado: 2026-07-04
+atualizado: 2026-08-29
 tags: [projeto, negocio, csharp, gitextensions, plugin, winforms, commit-message, conventional-commits, i18n]
 status: ativo
 linguagem: C#
-versao: 1.0.97
+versao: 1.0.98
 repo: C:\GitExtensions\GitExtensions.ZimerfeldCommitMsg
 ---
 
 # 📦 GitExtensions.ZimerfeldCommitMsg
 
-> 🇧🇷 Português → [[📦 GitExtensions.ZimerfeldCommitMsg]] · 🇪🇸 Español → [[📦 GitExtensions.ZimerfeldCommitMsg (ES)]]
+> 🇧🇷 Português → [[📦 GitExtensions.ZimerfeldCommitMsg (PT)|📦 GitExtensions.ZimerfeldCommitMsg]] · 🇪🇸 Español → [[📦 GitExtensions.ZimerfeldCommitMsg (ES)]]
 
 ## 🎯 Objective
 Plugin for **[GitExtensions](https://gitextensions.github.io/)** that **generates commit messages automatically** by analyzing the **real content** of the staged changes (not just file names). Changes are classified by the **Conventional Commits** types (`feat`/`fix`/`docs`/`test`/`chore`/`build`/`refactor`) to choose the right **verb**; the message is a **verb-first subject** (without the literal `type:` prefix) plus a **bulleted body**. See [[📜 Conventional Commits - Conceitos (EN)|Conventional Commits - Concepts]].
@@ -115,7 +115,7 @@ tools\update-dll.ps1   # updates just the DLL in the Plugins folder
 > As in the siblings, the DLL goes into the **root** `lib\` ("any" group) for the Plugin Manager to extract; the `nuget pack` **NU5101** warning is deliberately filtered in `build.ps1`. See [[🏷️ Versionamento (EN)|Versioning]] and [[🔗 Dependências (EN)|Dependencies]].
 
 ## 🔢 Versioning
-- Current version: **1.0.97** (csproj + nuspec synced by `build.ps1`)
+- Current version: **1.0.98** (csproj + nuspec synced by `build.ps1`)
 - Scheme: `major.minor.BUILD`, BUILD auto-incremented on each build
 - On every build, `build.ps1` stamps version + date into the **READMEs** (and keeps this vault in sync)
 

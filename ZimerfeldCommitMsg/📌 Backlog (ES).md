@@ -1,13 +1,13 @@
----
+﻿---
 tipo: backlog
 projeto: GitExtensions.ZimerfeldCommitMsg
 lang: es-ES
-atualizado: 2026-07-04
+atualizado: 2026-08-29
 ---
 
 # 📌 Backlog
 
-> 🇧🇷 Portugués → [[📌 Backlog]] · 🇺🇸 English → [[📌 Backlog (EN)]]
+> 🇧🇷 Portugués → [[📌 Backlog (PT)|📌 Backlog]] · 🇺🇸 English → [[📌 Backlog (EN)]]
 
 > [!tip] Empieza por aquí
 > Punto de retomada del proyecto. Al volver en otra sesión, lee la [[🏠 Home (ES)|Home]] y este backlog.

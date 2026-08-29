@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net9.0-windows</TargetFramework>
+    <TargetFramework>net10.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <AssemblyName>GitExtensions.Plugins.ZimerfeldCommitMsg</AssemblyName>
     <RootNamespace>GitExtensions.ZimerfeldCommitMsg</RootNamespace>
@@ -9,19 +9,20 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <PlatformTarget>AnyCPU</PlatformTarget>
     <NeutralLanguage>pt-BR</NeutralLanguage>
-    <Version>1.0.97</Version>
+    <Version>1.0.98</Version>
     <Authors>Zimerfeld</Authors>
     <Description>GitExtensions plugin that summarizes staged changes into a single commit message sentence</Description>
     <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
     <!-- GitExtensions hosts the plugin and supplies WindowsBase at runtime; nothing is
          copied to output (Private=false), so the build-time version conflict between the
-         net9 ref pack (4.0.0.0) and GitExtensions' VS.Threading (8.0.0.0) is harmless. -->
+         net10 ref pack (4.0.0.0) and GitExtensions' VS.Threading (8.0.0.0) is harmless. -->
     <MSBuildWarningsAsMessages>MSB3277</MSBuildWarningsAsMessages>
 
     <!-- Assemblies de referência do host versionados no repositório (refs/) → build
          determinístico em qualquer máquina Windows, sem download em prebuild e sem rede.
-         O download anterior escolhia o primeiro asset 'portable' do release, podendo trazer
-         um build arm64 (6.0.5.75) incompatível com o x64 instalado (6.0.5.18375). Ver refs/README.md. -->
+         Fixados no GitExtensions 7.2 (Extensibility 7.2.0.92, .NET 10). O GE7 mudou a
+         assinatura de AddCommitTemplate/StartCommitDialog em relação ao GE6, então compilar
+         contra a 6.x fazia os templates sumirem no host 7.x. Ver refs/README.md. -->
     <GitExtensionsRefPath>$(MSBuildProjectDirectory)\..\..\refs</GitExtensionsRefPath>
   </PropertyGroup>
 
@@ -49,7 +50,7 @@
   <ItemGroup>
     <!-- DLLs do host resolvidas a partir de refs/ (versionado), não mais de um download em
          prebuild. Private=false: o GitExtensions fornece esses assemblies em runtime; nada é
-         copiado para a saída. As versões em refs/ devem casar com o GitExtensions x64 6.0.5
+         copiado para a saída. As versões em refs/ devem casar com o GitExtensions x64 7.2
          de destino (ver refs/README.md). -->
     <Reference Include="GitExtensions.Extensibility">
       <HintPath>$(GitExtensionsRefPath)\GitExtensions.Extensibility.dll</HintPath>

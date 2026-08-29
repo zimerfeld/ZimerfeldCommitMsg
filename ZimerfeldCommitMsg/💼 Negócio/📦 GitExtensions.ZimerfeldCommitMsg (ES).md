@@ -1,18 +1,18 @@
----
+﻿---
 tipo: negocio
 projeto: GitExtensions.ZimerfeldCommitMsg
 lang: es-ES
-atualizado: 2026-07-04
+atualizado: 2026-08-29
 tags: [projeto, negocio, csharp, gitextensions, plugin, winforms, commit-message, conventional-commits, i18n]
 status: ativo
 linguagem: C#
-versao: 1.0.97
+versao: 1.0.98
 repo: C:\GitExtensions\GitExtensions.ZimerfeldCommitMsg
 ---
 
 # 📦 GitExtensions.ZimerfeldCommitMsg
 
-> 🇧🇷 Portugués → [[📦 GitExtensions.ZimerfeldCommitMsg]] · 🇺🇸 English → [[📦 GitExtensions.ZimerfeldCommitMsg (EN)]]
+> 🇧🇷 Portugués → [[📦 GitExtensions.ZimerfeldCommitMsg (PT)|📦 GitExtensions.ZimerfeldCommitMsg]] · 🇺🇸 English → [[📦 GitExtensions.ZimerfeldCommitMsg (EN)]]
 
 ## 🎯 Objetivo
 Plugin para **[GitExtensions](https://gitextensions.github.io/)** que **genera mensajes de commit automáticamente** analizando el **contenido real** de los cambios en stage (no solo los nombres de archivo). Los cambios se clasifican por los tipos de **Conventional Commits** (`feat`/`fix`/`docs`/`test`/`chore`/`build`/`refactor`) para elegir el **verbo** adecuado; el mensaje es un **subject iniciado por verbo** (sin el prefijo literal `tipo:`) más un **cuerpo en viñetas**. Ver [[📜 Conventional Commits - Conceitos (ES)|Conventional Commits - Conceptos]].

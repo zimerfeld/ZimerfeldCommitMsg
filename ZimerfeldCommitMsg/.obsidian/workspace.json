@@ -11,10 +11,14 @@
             "id": "2af5bba66bf53121",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "📚 Conhecimento/📜 Conventional Commits - Conceitos (EN).md",
+                "mode": "preview",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "📜 Conventional Commits - Conceitos (EN)"
             }
           }
         ]
@@ -179,6 +183,7 @@
   },
   "active": "2af5bba66bf53121",
   "lastOpenFiles": [
+    "🧩 Sistemas/🔗 Dependências.md",
     "🏠 Home (EN).md.tmp.28780.a74fc247e480",
     "🏠 Home (EN).md.tmp.28780.e0506c08548a",
     "🏠 Home (EN).md.tmp.28780.cda7332c2373",

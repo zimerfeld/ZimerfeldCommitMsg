@@ -8,7 +8,7 @@ tags: [meta, protocolo]
 
 # 🧭 How to use this vault (Claude's protocol)
 
-> 🇧🇷 Português → [[🧭 Como usar este cofre]] · 🇪🇸 Español → [[🧭 Como usar este cofre (ES)]]
+> 🇧🇷 Português → [[🧭 Como usar este cofre (PT)|🧭 Como usar este cofre]] · 🇪🇸 Español → [[🧭 Como usar este cofre (ES)]]
 
 > [!important] Memory protocol
 > At the **start** of each session, read: [[🏠 Home (EN)|Home]], [[🔑 Fatos-Chave (EN)|Key Facts]] and the [[📌 Backlog (EN)|Backlog]] (resumption point).
@@ -35,7 +35,7 @@ tags: [meta, protocolo]
 6. Use **callouts** (`> [!note]`, `> [!warning]`) for highlights.
 
 ## 🧩 Obsidian plugins
-- **Custom File Explorer sorting** (`custom-sort`) — **installed and active**; reads the [[sortspec]] to order folders by priority.
+- **Custom File Explorer sorting** (`custom-sort`) — **installed and active**; reads the [[sortspec (PT)|sortspec]] to order folders by priority.
 - **Dataview** / **Templater** — optional; without them the vault works normally.
 
 ## 🔗 Related

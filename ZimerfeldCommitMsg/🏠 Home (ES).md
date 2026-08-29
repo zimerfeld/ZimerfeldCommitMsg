@@ -1,13 +1,13 @@
----
+﻿---
 tipo: moc
 projeto: GitExtensions.ZimerfeldCommitMsg
 lang: es-ES
-atualizado: 2026-07-05
+atualizado: 2026-08-29
 ---
 
 # 🏠 GitExtensions.ZimerfeldCommitMsg — Cofre de Neurônios
 
-> 🇧🇷 Portugués → [[🏠 Home]] · 🇺🇸 English → [[🏠 Home (EN)]]
+> 🇧🇷 Portugués → [[🏠 Home (PT)|🏠 Home]] · 🇺🇸 English → [[🏠 Home (EN)]]
 
 > [!abstract] 🧠 Qué es este cofre
 > Memoria persistente de Claude para el proyecto **GitExtensions.ZimerfeldCommitMsg** — un plugin MEF para GitExtensions que genera mensajes de commit automáticamente a partir del diff en stage. Este cofre se mantiene en cada sesión: notas con par bilingüe (PT/EN), frontmatter estandarizado y ordenación por prioridad.
@@ -70,9 +70,9 @@ atualizado: 2026-07-05
 - [[👤 Renato (ES)|Renato]] — preferencias y contexto · [[🦀 RTK (ES)|RTK]] — proxy CLI de ahorro de tokens · [[📥 Inbox (ES)|Inbox]]
 
 ## 🧱 Templates
-- [[⚖️ Template - Decisão (ADR)|Template de Decisión (ADR)]] — modelo para nuevas Decisiones (ADRs)
-- [[💼 Template - Negócio|Template de Negocio]] — modelo para notas de Negocio
-- [[📚 Template - Conhecimento|Template de Conocimiento]] — modelo para notas de Conocimiento
+- [[⚖️ Template - Decisão (ADR) (PT)|Template de Decisión (ADR)]] — modelo para nuevas Decisiones (ADRs)
+- [[💼 Template - Negócio (PT)|Template de Negocio]] — modelo para notas de Negocio
+- [[📚 Template - Conhecimento (PT)|Template de Conocimiento]] — modelo para notas de Conocimiento
 
 ## 📂 Repo Folder Structure
 ```

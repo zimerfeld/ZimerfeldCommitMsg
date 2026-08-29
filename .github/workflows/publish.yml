@@ -14,7 +14,7 @@ on:
 
 jobs:
   publish:
-    runs-on: windows-latest        # net9.0-windows + WinForms exigem o Windows Desktop SDK
+    runs-on: windows-latest        # net10.0-windows + WinForms exigem o Windows Desktop SDK
     environment: production        # DEVE casar com o "Environment" da política do nuget.org
     permissions:
       id-token: write              # necessário para o OIDC do Trusted Publishing
@@ -23,15 +23,15 @@ jobs:
     env:
       PROJECT: src/GitExtensions.ZimerfeldCommitMsg/GitExtensions.ZimerfeldCommitMsg.csproj
       NUSPEC: src/GitExtensions.ZimerfeldCommitMsg/GitExtensions.ZimerfeldCommitMsg.nuspec
-      DLL: src/GitExtensions.ZimerfeldCommitMsg/bin/Release/net9.0-windows/GitExtensions.Plugins.ZimerfeldCommitMsg.dll
+      DLL: src/GitExtensions.ZimerfeldCommitMsg/bin/Release/net10.0-windows/GitExtensions.Plugins.ZimerfeldCommitMsg.dll
 
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup .NET 9
+      - name: Setup .NET 10
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: '9.0.x'
+          dotnet-version: '10.0.x'
 
       - name: Setup NuGet
         uses: NuGet/setup-nuget@v2
@@ -42,7 +42,7 @@ jobs:
       - name: Copy DLL to tools\ (referenciada pelo .nuspec)
         shell: pwsh
         run: |
-          $target = "tools/net9.0-windows"
+          $target = "tools/net10.0-windows"
           New-Item -ItemType Directory -Force $target | Out-Null
           Copy-Item $env:DLL $target -Force
 

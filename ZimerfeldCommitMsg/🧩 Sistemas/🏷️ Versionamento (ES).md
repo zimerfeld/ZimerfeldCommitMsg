@@ -1,14 +1,14 @@
----
+﻿---
 tipo: sistema
 projeto: GitExtensions.ZimerfeldCommitMsg
 lang: es-ES
-atualizado: 2026-07-04
+atualizado: 2026-08-29
 tags: [build, versão, nupkg, deploy]
 ---
 
 # 🏷️ Versionado y Build
 
-> 🇧🇷 Portugués → [[🏷️ Versionamento]] · 🇺🇸 English → [[🏷️ Versionamento (EN)]]
+> 🇧🇷 Portugués → [[🏷️ Versionamento (PT)|🏷️ Versionamento]] · 🇺🇸 English → [[🏷️ Versionamento (EN)]]
 
 ## 🔢 Esquema de versión
 

@@ -1,16 +1,16 @@
----
+﻿---
 tipo: conhecimento
 projeto: GitExtensions.ZimerfeldCommitMsg
 lang: es-ES
-atualizado: 2026-07-04
+atualizado: 2026-08-29
 tags: [conhecimento, readme, instalacao, build, uso, conventional-commits, i18n]
 fonte: README.md
-versao: 1.0.97
+versao: 1.0.98
 ---
 
 # 📖 README — Instalação, Uso e Build
 
-> 🇧🇷 Portugués → [[📖 README — Instalação, Uso e Build]] · 🇺🇸 English → [[📖 README — Instalação, Uso e Build (EN)]]
+> 🇧🇷 Portugués → [[📖 README — Instalação, Uso e Build (PT)|📖 README — Instalação, Uso e Build]] · 🇺🇸 English → [[📖 README — Instalação, Uso e Build (EN)]]
 
 > Espejo del `README.md` de la raíz del repositorio (multilingüe EN/PT/ES), reconciliado con el código el 2026-07-04.
 > Nota de proyecto: [[📦 GitExtensions.ZimerfeldCommitMsg (ES)|GitExtensions.ZimerfeldCommitMsg]]. Conceptos en [[📜 Conventional Commits - Conceitos (ES)|Conventional Commits - Conceptos]].

@@ -8,7 +8,7 @@ tags: [conhecimento, csharp, gitextensions, mef, plugin]
 
 # 🧩 Plugin MEF para GitExtensions
 
-> 🇧🇷 Portugués → [[🧩 Plugin MEF para GitExtensions]] · 🇺🇸 English → [[🧩 Plugin MEF para GitExtensions (EN)]]
+> 🇧🇷 Portugués → [[🧩 Plugin MEF para GitExtensions (PT)|🧩 Plugin MEF para GitExtensions]] · 🇺🇸 English → [[🧩 Plugin MEF para GitExtensions (EN)]]
 
 ## 📝 Resumen
 GitExtensions carga plugins vía **MEF** (Managed Extensibility Framework). El entry point es una clase exportada que implementa `IGitPlugin` (normalmente heredando de `GitPluginBase`).

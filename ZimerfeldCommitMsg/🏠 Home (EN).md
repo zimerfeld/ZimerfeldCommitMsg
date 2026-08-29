@@ -2,12 +2,12 @@
 tipo: moc
 projeto: GitExtensions.ZimerfeldCommitMsg
 lang: en-US
-atualizado: 2026-07-05
+atualizado: 2026-08-29
 ---
 
 # 🏠 GitExtensions.ZimerfeldCommitMsg — Cofre de Neurônios
 
-> 🇧🇷 Português → [[🏠 Home]] · 🇪🇸 Español → [[🏠 Home (ES)]]
+> 🇧🇷 Português → [[🏠 Home (PT)|🏠 Home]] · 🇪🇸 Español → [[🏠 Home (ES)]]
 
 > [!abstract] 🧠 What this vault is
 > Claude's persistent memory for the **GitExtensions.ZimerfeldCommitMsg** project — a MEF plugin for GitExtensions that generates commit messages automatically from the staged diff. This vault is maintained every session: bilingual-paired notes (PT/EN), standardized frontmatter and priority ordering.
@@ -70,9 +70,9 @@ atualizado: 2026-07-05
 - [[👤 Renato (EN)|Renato]] — preferences and context · [[🦀 RTK (EN)|RTK]] — token-saving CLI proxy · [[📥 Inbox (EN)|Inbox]]
 
 ## 🧱 Templates
-- [[⚖️ Template - Decisão (ADR)|Decision (ADR) template]] — template for new Decisions (ADRs)
-- [[💼 Template - Negócio|Business template]] — template for Business notes
-- [[📚 Template - Conhecimento|Knowledge template]] — template for Knowledge notes
+- [[⚖️ Template - Decisão (ADR) (PT)|Decision (ADR) template]] — template for new Decisions (ADRs)
+- [[💼 Template - Negócio (PT)|Business template]] — template for Business notes
+- [[📚 Template - Conhecimento (PT)|Knowledge template]] — template for Knowledge notes
 
 ## 📂 Repo Folder Structure
 ```

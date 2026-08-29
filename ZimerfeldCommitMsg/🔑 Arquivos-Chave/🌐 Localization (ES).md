@@ -9,7 +9,7 @@ arquivo: src/GitExtensions.ZimerfeldCommitMsg/Localization/
 
 # 🌐 Localization/ (MessageLanguage, LanguagePack, Strings)
 
-> 🇧🇷 Portugués → [[🌐 Localization]] · 🇺🇸 English → [[🌐 Localization (EN)]]
+> 🇧🇷 Portugués → [[🌐 Localization (PT)|🌐 Localization]] · 🇺🇸 English → [[🌐 Localization (EN)]]
 
 Carpeta de localización — dos ejes: **idioma del mensaje generado** y **strings de UI**.
 

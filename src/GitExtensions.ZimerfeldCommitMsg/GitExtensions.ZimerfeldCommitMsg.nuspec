@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>GitExtensions.ZimerfeldCommitMsg</id>
-    <version>1.0.97</version>
+    <version>1.0.98</version>
     <authors>Zimerfeld</authors>
     <description>Plugin for GitExtensions that automatically generates commit messages by analyzing the actual content of staged changes. Changes are classified by Conventional Commits type (feat/fix/docs/test/chore/build/refactor) to pick the appropriate verb; the resulting message is a verb-led subject (no literal "type:" prefix) plus a bulleted body. Output is in Brazilian Portuguese or English — selected automatically from the operating system language, with a manual override in the plugin settings. Supports two strategies: comment-based (extracts meaningful comments added to the diff) and filename-based (derives semantic concepts from file names). The message is refreshed automatically whenever files are staged or unstaged while the commit dialog is open.
 
@@ -18,30 +18,30 @@ Plugin para o GitExtensions que gera mensagens de commit automaticamente analisa
          moniker de framework aceito (net5.0..net10.0, "any" ou netstandard2.0 — a DLL em
          lib\ raiz é o grupo "any") e (c) DEPENDEM de GitExtensions.Extensibility com um range
          de versão que INCLUA a versão que o manager anuncia para o host em execução.
-         O manager v3.x (GitExtensions 6.x) anuncia 0.4.0, então o range PRECISA conter 0.4.0
-         → [0.4.0, 0.5.0), igual aos demais plugins GE6 que funcionam (AITools, BundleBackuper,
-         Gerrit, SolutionRunner…).
-         ATENÇÃO: um "1.0.0.129" puro significa ">= 1.0.0.129", que NÃO inclui 0.4.0, então o
-         pacote era silenciosamente filtrado para FORA do Plugin Manager (aquele valor estava
-         errado — o filtro casa com a versão anunciada pelo manager, NÃO com o runtime 6.0.5
-         instalado).
-         Para o GitExtensions 7 (manager v7.x anuncia 7.0.0), suba para [7.0.0, 8.0.0).
-         Alinhado ao ZimerfeldTree. -->
+         O manager v7.x (GitExtensions 7.x) anuncia 7.0.0, então o range PRECISA conter 7.0.0
+         → [7.0.0, 8.0.0). O plugin é compilado contra a Extensibility 7.2 (net10): o GE7 mudou
+         a assinatura de AddCommitTemplate/StartCommitDialog, então uma DLL de GE6 fazia os
+         templates sumirem no dropdown do host 7.x.
+         ATENÇÃO: um "1.0.0.129" puro significa ">= 1.0.0.129", que NÃO inclui a versão anunciada
+         pelo manager, então o pacote seria silenciosamente filtrado para FORA do Plugin Manager
+         (o filtro casa com a versão que o manager anuncia, NÃO com o runtime instalado).
+         Para voltar ao GitExtensions 6 (manager v3.x anuncia 0.4.0), usar [0.4.0, 0.5.0) e a
+         Extensibility 6.x. Alinhado ao ZimerfeldTree. -->
     <dependencies>
-      <dependency id="GitExtensions.Extensibility" version="[0.4.0, 0.5.0)" />
+      <dependency id="GitExtensions.Extensibility" version="[7.0.0, 8.0.0)" />
     </dependencies>
   </metadata>
   <files>
     <!-- Plugin DLL em lib\ RAIZ (sem subpasta de framework) — OBRIGATÓRIO e intencional.
          O Plugin Manager do GitExtensions só extrai um grupo lib cujo framework está na sua
          lista de monikers { net5.0..net10.0, any, netstandard2.0 }. Uma DLL em lib\ raiz é o
-         grupo "any" → casa. Uma subpasta lib\net9.0-windows\ NÃO está na lista → a DLL não
+         grupo "any" → casa. Uma subpasta lib\net10.0-windows\ NÃO está na lista → a DLL não
          seria extraída e o plugin falharia ao instalar. Isso também faz o nuget.org exibir
          compatibilidade ampla (inclusive .NET Framework). O aviso NU5101 do pack é filtrado
          no build.ps1 de propósito. Alinhado ao ZimerfeldTree. -->
-    <file src="..\..\tools\net9.0-windows\GitExtensions.Plugins.ZimerfeldCommitMsg.dll" target="lib\" />
+    <file src="..\..\tools\net10.0-windows\GitExtensions.Plugins.ZimerfeldCommitMsg.dll" target="lib\" />
     <!-- Mesma DLL sob tools\ para a instalação legada via Package Manager Console (install.ps1) -->
-    <file src="..\..\tools\net9.0-windows\GitExtensions.Plugins.ZimerfeldCommitMsg.dll" target="tools\net9.0-windows\" />
+    <file src="..\..\tools\net10.0-windows\GitExtensions.Plugins.ZimerfeldCommitMsg.dll" target="tools\net10.0-windows\" />
     <!-- Install / Uninstall scripts -->
     <file src="..\..\tools\install.ps1" target="tools\" />
     <file src="..\..\tools\uninstall.ps1" target="tools\" />

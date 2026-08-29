@@ -36,7 +36,7 @@ $ErrorActionPreference = "Stop"
 # When run by NuGet PMC, $toolsPath is set to the package's tools\ folder.
 # When run standalone, resolve relative to this script's location.
 if ($toolsPath) {
-    $dllDir = Join-Path $toolsPath "net9.0-windows"
+    $dllDir = Join-Path $toolsPath "net10.0-windows"
     $dllName = "GitExtensions.Plugins.ZimerfeldCommitMsg.dll"
     $dll     = Join-Path $dllDir $dllName
 } else {
@@ -44,7 +44,7 @@ if ($toolsPath) {
     $projectRoot = Join-Path $repoRoot "src\GitExtensions.ZimerfeldCommitMsg"
     $buildScript = Join-Path $repoRoot "build.ps1"
     $dllName = "GitExtensions.Plugins.ZimerfeldCommitMsg.dll"
-    $dll = Join-Path $projectRoot "bin\$Config\net9.0-windows\$dllName"
+    $dll = Join-Path $projectRoot "bin\$Config\net10.0-windows\$dllName"
 
     if ((Test-Path $projectRoot) -and (Test-Path $buildScript)) {
         $inputs = Get-ChildItem $projectRoot -Recurse -File -Include *.cs,*.csproj,*.resx,*.png |
@@ -76,7 +76,7 @@ if ($toolsPath) {
             exit 1
         }
     } else {
-        $dllDir = Join-Path $PSScriptRoot "net9.0-windows"
+        $dllDir = Join-Path $PSScriptRoot "net10.0-windows"
         $dll = Join-Path $dllDir $dllName
     }
 }
