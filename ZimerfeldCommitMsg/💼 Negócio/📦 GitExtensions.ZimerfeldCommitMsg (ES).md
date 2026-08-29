@@ -1,12 +1,12 @@
----
+﻿---
 tipo: negocio
 projeto: GitExtensions.ZimerfeldCommitMsg
 lang: es-ES
-atualizado: 2026-07-04
+atualizado: 2026-08-29
 tags: [projeto, negocio, csharp, gitextensions, plugin, winforms, commit-message, conventional-commits, i18n]
 status: ativo
 linguagem: C#
-versao: 1.0.97
+versao: 1.0.98
 repo: C:\GitExtensions\GitExtensions.ZimerfeldCommitMsg
 ---
 

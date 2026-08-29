@@ -7,7 +7,7 @@ param([string]$Config = "Release")
 
 $repoRoot = [System.IO.Path]::GetFullPath((Join-Path $PSScriptRoot ".."))
 $projectRoot = Join-Path $repoRoot "src\GitExtensions.ZimerfeldCommitMsg"
-$dll = Join-Path $projectRoot "bin\$Config\net9.0-windows\GitExtensions.Plugins.ZimerfeldCommitMsg.dll"
+$dll = Join-Path $projectRoot "bin\$Config\net10.0-windows\GitExtensions.Plugins.ZimerfeldCommitMsg.dll"
 $csproj = Join-Path $projectRoot "GitExtensions.ZimerfeldCommitMsg.csproj"
 
 $inputs = Get-ChildItem $projectRoot -Recurse -File -Include *.cs,*.csproj,*.resx,*.png |
@@ -26,7 +26,7 @@ if (-not (Test-Path $dll)) {
     Invoke-PluginBuild
 }
 elseif ($newestInput -and ((Get-Item $dll).LastWriteTimeUtc -lt $newestInput)) {
-    Write-Warning "DLL em bin\$Config esta mais antiga que as fontes/recursos em tools\net9.0-windows."
+    Write-Warning "DLL em bin\$Config esta mais antiga que as fontes/recursos em tools\net10.0-windows."
     Invoke-PluginBuild
 }
 

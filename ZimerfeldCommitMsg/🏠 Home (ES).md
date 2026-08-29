@@ -1,8 +1,8 @@
----
+﻿---
 tipo: moc
 projeto: GitExtensions.ZimerfeldCommitMsg
 lang: es-ES
-atualizado: 2026-07-05
+atualizado: 2026-08-29
 ---
 
 # 🏠 GitExtensions.ZimerfeldCommitMsg — Cofre de Neurônios
