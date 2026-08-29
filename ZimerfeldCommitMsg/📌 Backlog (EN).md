@@ -1,8 +1,8 @@
----
+﻿---
 tipo: backlog
 projeto: GitExtensions.ZimerfeldCommitMsg
 lang: en-US
-atualizado: 2026-07-07
+atualizado: 2026-08-29
 ---
 
 # 📌 Backlog

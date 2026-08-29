@@ -224,7 +224,7 @@ $pluginsDir = "C:\Program Files\GitExtensions\Plugins"
 if (-not (Test-Path $pluginsDir)) {
     $pluginsDir = "C:\Program Files (x86)\GitExtensions\Plugins"
 }
-$dll = "$PSScriptRoot\src\GitExtensions.ZimerfeldCommitMsg\bin\Release\net9.0-windows\GitExtensions.Plugins.ZimerfeldCommitMsg.dll"
+$dll = "$PSScriptRoot\src\GitExtensions.ZimerfeldCommitMsg\bin\Release\net10.0-windows\GitExtensions.Plugins.ZimerfeldCommitMsg.dll"
 
 $isAdmin = ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole(
     [Security.Principal.WindowsBuiltInRole]::Administrator)
@@ -239,7 +239,7 @@ if ($isAdmin -and (Test-Path $pluginsDir)) {
 }
 
 # Atualiza copia na pasta tools (usada pelo nupkg)
-$toolsTarget = "$PSScriptRoot\tools\net9.0-windows"
+$toolsTarget = "$PSScriptRoot\tools\net10.0-windows"
 if (-not (Test-Path $toolsTarget)) { New-Item -ItemType Directory $toolsTarget | Out-Null }
 Copy-Item $dll $toolsTarget -Force
 
@@ -261,7 +261,7 @@ if (-not $nugetExe) {
 
 # NU5101 (DLL diretamente em lib\) e' INTENCIONAL: o GitExtensions Plugin Manager so'
 # extrai o grupo lib cujo framework esta na sua lista de monikers { net5.0..net10.0, any,
-# netstandard2.0 }. lib\ raiz = grupo "any" (extraido); uma subpasta net9.0-windows NAO
+# netstandard2.0 }. lib\ raiz = grupo "any" (extraido); uma subpasta net10.0-windows NAO
 # esta na lista e quebraria a instalacao. Por isso filtramos esse aviso especifico.
 & $nugetExe pack $nuspec -OutputDirectory $outDir 2>&1 |
     ForEach-Object {

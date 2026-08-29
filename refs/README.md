@@ -7,8 +7,8 @@ gets pulled in.
 
 | File | Version | Source |
 |------|---------|--------|
-| `GitExtensions.Extensibility.dll` | `6.0.5.18375` (x64) | GitExtensions 6.0.5 (x64 release) |
-| `System.ComponentModel.Composition.dll` | `6.0.21.52210` | GitExtensions 6.0.5 (x64 release) |
+| `GitExtensions.Extensibility.dll` | `7.2.0.92` (x64) | GitExtensions 7.2 (x64 release, .NET 10) |
+| `System.ComponentModel.Composition.dll` | `6.0.21.52210` | GitExtensions 7.2 (x64 release; unchanged since 6.0.5) |
 
 They are referenced from
 [`GitExtensions.ZimerfeldCommitMsg.csproj`](../src/GitExtensions.ZimerfeldCommitMsg/GitExtensions.ZimerfeldCommitMsg.csproj)
@@ -28,11 +28,25 @@ produced a runtime `Method not found: …IGitUICommands.AddCommitTemplate(…)` 
 download also required network access, so a fresh clone could not build offline.
 
 Pinning the reference assemblies removes both problems: the compile is reproducible and
-offline-capable, and it always targets the x64 6.0.5 API.
+offline-capable, and it always targets the x64 7.2 API.
+
+## Target: GitExtensions 7.2 (.NET 10)
+
+These refs are pinned to **GitExtensions 7.2** (host runtime `net10.0`). GE7 changed a couple
+of `IGitUICommands` signatures relative to GE6 — most notably
+`AddCommitTemplate(string, Func<string>, Image)` gained a fourth `bool isRegex = false`
+parameter, and `StartCommitDialog` gained a `bool showOnlyWhenChanges = false` parameter.
+A plugin DLL compiled against the GE6 API throws `MissingMethodException` when the host calls
+those methods; the plugin swallows it (`try/catch`), so the commit-template dropdown items
+**silently disappear** on a GE7 host. Compiling against the 7.2 refs (and targeting
+`net10.0-windows`) fixes it. The new parameters are optional, so the existing call sites
+recompile unchanged.
 
 ## Updating
 
-Replace these files with the matching DLLs from a newer GitExtensions **x64** release (and
-bump `GitExtensionsReferenceVersion`-style expectations in the README if the target version
-changes). The plugin guards its host calls (`try/catch` around
+Replace these files with the matching DLLs from a newer GitExtensions **x64** release and
+bump the version table above. Keep the project's `TargetFramework` aligned with the host's
+runtime (`net10.0-windows` for GE7). The plugin guards its host calls (`try/catch` around
 `AddCommitTemplate`), so a minor host/reference skew degrades gracefully instead of crashing.
+To target GitExtensions **6.x** again, restore the 6.0.5 `GitExtensions.Extensibility.dll`,
+set `TargetFramework` back to `net9.0-windows` and the nuspec dependency to `[0.4.0, 0.5.0)`.

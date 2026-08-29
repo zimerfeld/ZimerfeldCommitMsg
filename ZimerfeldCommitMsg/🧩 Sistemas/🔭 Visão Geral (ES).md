@@ -1,8 +1,8 @@
----
+﻿---
 tipo: sistema
 projeto: GitExtensions.ZimerfeldCommitMsg
 lang: es-ES
-atualizado: 2026-07-04
+atualizado: 2026-08-29
 tags: [sistema, overview, plugin, gitextensions, commit-message, conventional-commits, i18n]
 ---
 

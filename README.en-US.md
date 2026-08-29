@@ -8,8 +8,8 @@ This plugin is built and maintained in my free time. If it saves you time on eve
 
 [![GitHub Sponsor](https://img.shields.io/badge/Sponsor-zimerfeld-EA4AAA?style=for-the-badge&logo=githubsponsors&logoColor=white)](https://github.com/sponsors/zimerfeld) &nbsp;&nbsp;&nbsp;&nbsp; [![Ko-fi](https://img.shields.io/badge/Ko--fi-Buy%20me%20a%20coffee-FF5E2B?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/C0D621FCGD)
 
-**Version:** 1.0.97
-**Updated:** 2026-07-04
+**Version:** 1.0.98
+**Updated:** 2026-08-29
 
 Plugin for **[GitExtensions](https://gitextensions.github.io/)** that automatically generates commit messages by analyzing the real content of staged changes. Changes are classified by **Conventional Commits** types (`feat`/`fix`/`docs`/`test`/`chore`/`build`/`refactor`) to choose the appropriate **verb**, and the resulting message is a **verb-led sentence** followed by a bulleted body — **without** the `type:` prefix. **Multilingual**: generates output in **Brazilian Portuguese, English or Spanish**, automatically detected from the operating system language, with a **manual override** in the plugin settings.
 
@@ -286,6 +286,7 @@ The body lists up to **5 bullets** — **at least one, even with a single file**
 
 ## Requirements
 
+- **GitExtensions 7.x** — the plugin is built for .NET 10 (Extensibility 7.2). For GitExtensions 6.x, use version **1.0.97** or earlier.
 - PowerShell 5.1 or later
 - **Administrator** permission to install/uninstall
 
@@ -345,7 +346,7 @@ Each time `build.ps1` runs, the script:
 4. Only then bumps the version in `.nuspec` and `.csproj`
 5. Compiles in Release
 6. Copies the DLL to `C:\Program Files\GitExtensions\Plugins\` _(requires Admin)_
-7. Updates `tools\net9.0-windows\` with the new DLL
+7. Updates `tools\net10.0-windows\` with the new DLL
 8. Generates `GitExtensions.ZimerfeldCommitMsg.X.Y.Z.nupkg`
 9. Removes `.nupkg` files from previous versions
 

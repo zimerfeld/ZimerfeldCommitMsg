@@ -1,4 +1,4 @@
-# GitExtensions.ZimerfeldCommitMsg
+﻿# GitExtensions.ZimerfeldCommitMsg
 
 ![Icone](https://raw.githubusercontent.com/zimerfeld/ZimerfeldCommitMsg/main/src/GitExtensions.ZimerfeldCommitMsg/Resources/icon-128.png)
 
@@ -286,6 +286,7 @@ El cuerpo lista hasta **5 viñetas** — **al menos una, incluso con un único a
 
 ## Requisitos
 
+- **GitExtensions 7.x** — el plugin se compila para .NET 10 (Extensibility 7.2). Para GitExtensions 6.x, use la versión **1.0.97** o anterior.
 - PowerShell 5.1 o posterior
 - Permiso de **Administrador** para instalar/desinstalar
 
@@ -345,7 +346,7 @@ Cada vez que se ejecuta `build.ps1`, el script:
 4. Solo entonces sube la versión en el `.nuspec` y el `.csproj`
 5. Compila en Release
 6. Copia la DLL a `C:\Program Files\GitExtensions\Plugins\` _(requiere Admin)_
-7. Actualiza `tools\net9.0-windows\` con la nueva DLL
+7. Actualiza `tools\net10.0-windows\` con la nueva DLL
 8. Genera `GitExtensions.ZimerfeldCommitMsg.X.Y.Z.nupkg`
 9. Elimina los archivos `.nupkg` de versiones anteriores
 

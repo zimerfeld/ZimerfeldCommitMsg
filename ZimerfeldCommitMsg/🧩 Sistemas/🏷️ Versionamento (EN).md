@@ -1,8 +1,8 @@
----
+﻿---
 tipo: sistema
 projeto: GitExtensions.ZimerfeldCommitMsg
 lang: en-US
-atualizado: 2026-07-04
+atualizado: 2026-08-29
 tags: [build, versão, nupkg, deploy]
 ---
 
@@ -14,7 +14,7 @@ tags: [build, versão, nupkg, deploy]
 
 `major.minor.build` — only `build` is incremented automatically by `build.ps1`. Major and minor are changed manually.
 
-**Current version:** `1.0.97` *(source of truth: `.nuspec` / `.csproj`)*
+**Current version:** `1.0.98` *(source of truth: `.nuspec` / `.csproj`)*
 
 > [!note] Embedded UI strings (no satellite assemblies)
 > UI strings live in `Resources/Strings.resx` and `Resources/StringsPtBr.resx`, embedded into the
