@@ -18,8 +18,8 @@ A plugin for **GitExtensions** (Windows) that **automatically generates the comm
 
 | Item | Value |
 |---|---|
-| Language | C# (.NET 9) |
-| Target | `net9.0-windows` |
+| Language | C# (.NET 10) |
+| Target | `net10.0-windows` |
 | UI Framework | Windows Forms (`UseWindowsForms`) — no window of its own; integrates with the commit dialog |
 | Output type | `Library` (DLL loaded by GitExtensions) |
 | Output assembly | `GitExtensions.Plugins.ZimerfeldCommitMsg.dll` |
@@ -63,7 +63,7 @@ See [[⚙️ Geração de mensagem a partir do diff (EN)|Message generation from
 
 ## ✅ Runtime requirements
 
-- **GitExtensions 6.x** (.NET 9)
+- **GitExtensions 7.x** (.NET 10)
 - **`git`** on the `PATH` (the generator runs `git diff --cached`)
 
 ## 🔗 Links

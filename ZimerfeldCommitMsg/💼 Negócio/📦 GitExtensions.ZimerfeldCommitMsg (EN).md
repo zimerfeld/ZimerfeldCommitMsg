@@ -36,7 +36,7 @@ C:\GitExtensions\GitExtensions.ZimerfeldCommitMsg\
 ├─ tests\GitExtensions.ZimerfeldCommitMsg.Tests\  # xUnit: comments, concepts, vocab, translation
 ├─ refs\                                        # versioned host DLLs (deterministic build)
 ├─ tools\                                       # install/uninstall/update-dll .ps1, nuget.exe, generate-icon.ps1
-│   └─ net9.0-windows\                          # build output (DLL) used by the nupkg
+│   └─ net10.0-windows\                          # build output (DLL) used by the nupkg
 ├─ ZimerfeldCommitMsg\                          # 🧠 this memory vault
 ├─ build.ps1                                    # bumps version + build + deploy + nupkg
 ├─ README.md / README.pt-BR.md / README.en-US.md  # mirrored in [[📖 README — Instalação, Uso e Build (EN)|README — Install, Use and Build]]
@@ -44,7 +44,7 @@ C:\GitExtensions\GitExtensions.ZimerfeldCommitMsg\
 ```
 
 ## ⚙️ Technical stack
-- **Language:** C# (`net9.0-windows`), `Nullable` + `ImplicitUsings` enabled
+- **Language:** C# (`net10.0-windows`), `Nullable` + `ImplicitUsings` enabled
 - **UI:** WinForms (`UseWindowsForms`) — the plugin **has no window of its own**; it integrates into the host's **commit dialog**
 - **Output type:** `Library` (DLL loaded by GitExtensions)
 - **AssemblyName:** `GitExtensions.Plugins.ZimerfeldCommitMsg`

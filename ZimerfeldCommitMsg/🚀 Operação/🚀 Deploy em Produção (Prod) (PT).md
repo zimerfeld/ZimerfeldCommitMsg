@@ -29,7 +29,7 @@ O `.nupkg` de produção fica na **raiz do repo** (`GitExtensions.ZimerfeldCommi
 3. Fecha o GitExtensions.
 4. Carimba versão + data nos **READMEs** e nas notas do cofre que espelham a versão atual; dá o bump no `.nuspec`/`.csproj`.
 5. `dotnet build -c Release`.
-6. Copia a DLL para `tools\net9.0-windows\` (fonte do nupkg).
+6. Copia a DLL para `tools\net10.0-windows\` (fonte do nupkg).
 7. `nuget pack` → `.nupkg` na raiz; remove `.nupkg` de versões anteriores. A DLL vai em `lib\` **raiz** (grupo "any") — daí o aviso **NU5101**, filtrado de propósito.
 
 ## 📤 Publicação (após o build)
@@ -44,7 +44,7 @@ gh release create vX.Y.Z .\GitExtensions.ZimerfeldCommitMsg.X.Y.Z.nupkg --title 
 > Prova social no README: badges `shields.io/nuget/v` (versão) e `/dt` (downloads) — atualizam sozinhos após a publicação no NuGet.
 
 ## 🚦 Requisitos
-- **.NET 9 SDK**, `nuget.exe` (em `tools\nuget.exe`), API key do NuGet, `gh` autenticado.
+- **.NET 10 SDK**, `nuget.exe` (em `tools\nuget.exe`), API key do NuGet, `gh` autenticado.
 - Versão sincronizada em `.nuspec` **e** `.csproj` (o `build.ps1` garante).
 
 ## 🔀 Regras que respeita (GitFlow)

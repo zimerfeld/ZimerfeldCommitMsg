@@ -37,19 +37,19 @@ build.ps1  [-Force]
   ├─ 4b. Sella versión + fecha al inicio de los READMEs (README.md / .pt-BR / .en-US)
   ├─ 5. dotnet build -c Release
   ├─ 6. Copia la DLL → C:\Program Files\GitExtensions\Plugins\  (requiere Admin)
-  ├─ 6b. Copia la DLL → tools\net9.0-windows\  (para el nupkg)
+  ├─ 6b. Copia la DLL → tools\net10.0-windows\  (para el nupkg)
   ├─ 7. nuget pack .nuspec → .nupkg en la raíz (filtra el aviso NU5101)
   └─ 7b. Elimina .nupkg de versiones anteriores
 ```
 
 > [!warning] El aviso **NU5101** es intencional
 > La DLL se empaqueta en `lib\` **raíz** (grupo "any" que el Plugin Manager extrae), no en
-> `lib\net9.0-windows\`. Esto genera el aviso NU5101, que el `build.ps1` **filtra a propósito** en
+> `lib\net10.0-windows\`. Esto genera el aviso NU5101, que el `build.ps1` **filtra a propósito** en
 > `nuget pack`. Detalle en [[🔗 Dependências (ES)|Dependencias]] y en el `.nuspec`.
 
 <!-- -->
 
-> Requiere el **.NET 9 SDK** (`dotnet`) y, para el deploy, permiso de **Administrador**. Sin Admin, el paso de deploy se omite con aviso; `nuget` queda en `tools\nuget.exe`.
+> Requiere el **.NET 10 SDK** (`dotnet`) y, para el deploy, permiso de **Administrador**. Sin Admin, el paso de deploy se omite con aviso; `nuget` queda en `tools\nuget.exe`.
 
 ## 📄 Archivos versionados
 
