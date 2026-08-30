@@ -5,7 +5,7 @@ lang: en-US
 atualizado: 2026-08-29
 tags: [conhecimento, readme, instalacao, build, uso, conventional-commits, i18n]
 fonte: README.md
-versao: 1.0.98
+versao: 1.0.99
 ---
 
 # 📖 README — Install, Use and Build

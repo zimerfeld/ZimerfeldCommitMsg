@@ -1,8 +1,8 @@
----
+﻿---
 tipo: sistema
 projeto: GitExtensions.ZimerfeldCommitMsg
 lang: pt-BR
-atualizado: 2026-07-04
+atualizado: 2026-08-29
 tags: [sistema, overview, plugin, gitextensions, commit-message, conventional-commits, i18n]
 ---
 
@@ -24,7 +24,7 @@ Plugin para **GitExtensions** (Windows) que **gera a mensagem de commit automati
 | Tipo de saída | `Library` (DLL carregada pelo GitExtensions) |
 | Assembly de saída | `GitExtensions.Plugins.ZimerfeldCommitMsg.dll` |
 | Namespace | `GitExtensions.ZimerfeldCommitMsg` |
-| Versão atual | `1.0.97` |
+| Versão atual | `1.0.99` |
 | Idiomas | Português-BR / Inglês (auto pelo SO + override) |
 | Licença | CC BY-NC-ND 4.0 © 2026 Zimerfeld |
 | Autor | Zimerfeld |
