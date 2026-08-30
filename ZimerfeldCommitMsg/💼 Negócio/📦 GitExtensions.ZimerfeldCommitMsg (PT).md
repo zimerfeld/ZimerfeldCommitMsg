@@ -1,12 +1,12 @@
----
+﻿---
 tipo: negocio
 projeto: GitExtensions.ZimerfeldCommitMsg
 lang: pt-BR
-atualizado: 2026-07-04
+atualizado: 2026-08-29
 tags: [projeto, negocio, csharp, gitextensions, plugin, winforms, commit-message, conventional-commits, i18n]
 status: ativo
 linguagem: C#
-versao: 1.0.97
+versao: 1.0.99
 repo: C:\GitExtensions\GitExtensions.ZimerfeldCommitMsg
 ---
 
@@ -115,7 +115,7 @@ tools\update-dll.ps1   # atualiza apenas a DLL na pasta Plugins
 > Como nos irmãos, a DLL vai em `lib\` **raiz** (grupo "any") para o Plugin Manager extrair; o aviso **NU5101** do `nuget pack` é filtrado de propósito no `build.ps1`. Ver [[🏷️ Versionamento (PT)|🏷️ Versionamento]] e [[🔗 Dependências (PT)|🔗 Dependências]].
 
 ## 🔢 Versionamento
-- Versão atual: **1.0.97** (csproj + nuspec sincronizados pelo `build.ps1`)
+- Versão atual: **1.0.99** (csproj + nuspec sincronizados pelo `build.ps1`)
 - Esquema: `major.minor.BUILD`, BUILD auto-incrementado a cada build
 - A cada build, o `build.ps1` carimba versão + data nos **READMEs** (e mantém este cofre em sincronia)
 

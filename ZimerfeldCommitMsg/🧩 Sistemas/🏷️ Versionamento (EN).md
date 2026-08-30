@@ -14,7 +14,7 @@ tags: [build, versão, nupkg, deploy]
 
 `major.minor.build` — only `build` is incremented automatically by `build.ps1`. Major and minor are changed manually.
 
-**Current version:** `1.0.98` *(source of truth: `.nuspec` / `.csproj`)*
+**Current version:** `1.0.99` *(source of truth: `.nuspec` / `.csproj`)*
 
 > [!note] Embedded UI strings (no satellite assemblies)
 > UI strings live in `Resources/Strings.resx` and `Resources/StringsPtBr.resx`, embedded into the
