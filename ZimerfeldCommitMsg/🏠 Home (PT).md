@@ -1,8 +1,8 @@
----
+﻿---
 tipo: moc
 projeto: GitExtensions.ZimerfeldCommitMsg
 lang: pt-BR
-atualizado: 2026-07-05
+atualizado: 2026-08-29
 ---
 
 # 🏠 GitExtensions.ZimerfeldCommitMsg — Cofre de Neurônios
@@ -16,7 +16,7 @@ atualizado: 2026-07-05
 - **O que é:** extensão (plugin MEF) para o **GitExtensions** que se integra ao **diálogo de commit** e **preenche a mensagem automaticamente** analisando o `git diff --cached`.
 - **Problema que resolve:** escrever boas mensagens de commit é chato e inconsistente. O plugin lê o que **de fato** mudou (comentários adicionados no diff + nomes de arquivo), classifica por Conventional Commits e materializa um subject + corpo prontos — em pt-BR ou inglês.
 - **Diferenciais:** analisa o **conteúdo do diff**, não só nomes de arquivo; **verbo guiado por Conventional Commits** sem poluir a mensagem com `tipo:`; **duas estratégias** (comentários + nomes de arquivo); **vocabulário por repositório** (`.zimerfeldcommitmsg.json`) sem recompilar; **auto-refresh** ao stage/unstage; **não destrutivo**; **i18n** (Automático / PT-BR / EN).
-- **Stack:** C# / WinForms `Library`, alvo **net9.0-windows**, empacotado como **nupkg**; build e versionamento via `build.ps1`.
+- **Stack:** C# / WinForms `Library`, alvo **net10.0-windows**, empacotado como **nupkg**; build e versionamento via `build.ps1`.
 - **Estado atual:** versão **`1.0.97`** — funcional, com **suíte de testes xUnit**.
 - **Público-alvo:** desenvolvedores e times que usam GitExtensions no Windows e querem mensagens de commit consistentes com pouco esforço.
 - **Ângulo de negócio/portfólio:** produto **open source** sob o owner `zimerfeld`, ao lado dos irmãos `GitExtensions.ZimerfeldLFS` e `GitExtensions.ZimerfeldTree`.
@@ -88,7 +88,7 @@ GitExtensions.ZimerfeldCommitMsg/
 ├── refs/                              ← DLLs do host versionadas (Private=false)
 ├── tools/
 │   ├── install.ps1 / uninstall.ps1 / update-dll.ps1
-│   ├── net9.0-windows/                ← DLL para o nupkg
+│   ├── net10.0-windows/                ← DLL para o nupkg
 │   └── generate-icon.ps1
 ├── ZimerfeldCommitMsg/                ← 🧠 este cofre de memória
 ├── build.ps1                          ← incrementa versão + build + deploy + nupkg

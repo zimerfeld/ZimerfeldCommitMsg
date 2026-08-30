@@ -133,17 +133,17 @@ foreach ($readmeDoc in $readmeDocs) {
 # Backlog. Notas de sessao/historico mencionam versoes antigas e NAO entram de proposito.
 $vault = "$PSScriptRoot\ZimerfeldCommitMsg"
 $obsidianDocs = @(
-    "$vault\💼 Negócio\📦 GitExtensions.ZimerfeldCommitMsg.md",
+    "$vault\💼 Negócio\📦 GitExtensions.ZimerfeldCommitMsg (PT).md",
     "$vault\💼 Negócio\📦 GitExtensions.ZimerfeldCommitMsg (EN).md",
-    "$vault\📚 Conhecimento\📖 README — Instalação, Uso e Build.md",
+    "$vault\📚 Conhecimento\📖 README — Instalação, Uso e Build (PT).md",
     "$vault\📚 Conhecimento\📖 README — Instalação, Uso e Build (EN).md",
-    "$vault\🧩 Sistemas\🔭 Visão Geral.md",
+    "$vault\🧩 Sistemas\🔭 Visão Geral (PT).md",
     "$vault\🧩 Sistemas\🔭 Visão Geral (EN).md",
-    "$vault\🧩 Sistemas\🏷️ Versionamento.md",
+    "$vault\🧩 Sistemas\🏷️ Versionamento (PT).md",
     "$vault\🧩 Sistemas\🏷️ Versionamento (EN).md",
-    "$vault\🏠 Home.md",
+    "$vault\🏠 Home (PT).md",
     "$vault\🏠 Home (EN).md",
-    "$vault\📌 Backlog.md",
+    "$vault\📌 Backlog (PT).md",
     "$vault\📌 Backlog (EN).md",
     "$vault\💼 Negócio\📦 GitExtensions.ZimerfeldCommitMsg (ES).md",
     "$vault\📚 Conhecimento\📖 README — Instalação, Uso e Build (ES).md",
@@ -183,7 +183,7 @@ $csprojContent = $csprojContent -replace '<Version>[^<]+</Version>', "<Version>$
 # Garante que o dotnet esta no PATH antes de compilar -- erro limpo em vez de
 # "termo nao reconhecido" cru do PowerShell.
 if (-not (Get-Command dotnet -ErrorAction SilentlyContinue)) {
-    Write-Error "dotnet.exe nao encontrado no PATH. Instale o .NET 9 SDK e tente novamente."
+    Write-Error "dotnet.exe nao encontrado no PATH. Instale o .NET 10 SDK e tente novamente."
     exit 1
 }
 Write-Host "Compilando..."

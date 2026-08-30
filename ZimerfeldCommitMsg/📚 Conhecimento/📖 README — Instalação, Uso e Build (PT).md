@@ -1,11 +1,11 @@
----
+﻿---
 tipo: conhecimento
 projeto: GitExtensions.ZimerfeldCommitMsg
 lang: pt-BR
-atualizado: 2026-07-04
+atualizado: 2026-08-29
 tags: [conhecimento, readme, instalacao, build, uso, conventional-commits, i18n]
 fonte: README.md
-versao: 1.0.97
+versao: 1.0.99
 ---
 
 # 📖 README — Instalação, Uso e Build
@@ -55,7 +55,7 @@ Exemplo lado a lado:
 > O nó **ZimerfeldCommitMsg** só aparece em **Configurações → Plugins** depois que a DLL com o seletor de idioma é instalada e o GitExtensions é reiniciado.
 
 ## ✅ Requisitos
-- GitExtensions 6.x (.NET 9)
+- GitExtensions 7.x (.NET 10)
 - `git` no `PATH` (o gerador roda `git diff --cached`)
 
 ## 🛠️ Build

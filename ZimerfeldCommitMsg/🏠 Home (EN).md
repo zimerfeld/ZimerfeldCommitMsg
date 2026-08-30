@@ -16,7 +16,7 @@ atualizado: 2026-08-29
 - **What it is:** a (MEF plugin) extension for **GitExtensions** that integrates into the **commit dialog** and **fills the message automatically** by analyzing `git diff --cached`.
 - **Problem it solves:** writing good commit messages is tedious and inconsistent. The plugin reads what **actually** changed (comments added in the diff + file names), classifies by Conventional Commits and materializes a ready subject + body — in pt-BR or English.
 - **Differentiators:** analyzes the **diff content**, not just file names; **verb guided by Conventional Commits** without polluting the message with `type:`; **two strategies** (comments + file names); **per-repository vocabulary** (`.zimerfeldcommitmsg.json`) without recompiling; **auto-refresh** on stage/unstage; **non-destructive**; **i18n** (Automatic / PT-BR / EN).
-- **Stack:** C# / WinForms `Library`, targeting **net9.0-windows**, packaged as a **nupkg**; build and versioning via `build.ps1`.
+- **Stack:** C# / WinForms `Library`, targeting **net10.0-windows**, packaged as a **nupkg**; build and versioning via `build.ps1`.
 - **Current state:** version **`1.0.97`** — functional, with an **xUnit test suite**.
 - **Target audience:** developers and teams using GitExtensions on Windows who want consistent commit messages with little effort.
 - **Business/portfolio angle:** **open source** product under the owner `zimerfeld`, alongside the siblings `GitExtensions.ZimerfeldLFS` and `GitExtensions.ZimerfeldTree`.
@@ -88,7 +88,7 @@ GitExtensions.ZimerfeldCommitMsg/
 ├── refs/                              ← versioned host DLLs (Private=false)
 ├── tools/
 │   ├── install.ps1 / uninstall.ps1 / update-dll.ps1
-│   ├── net9.0-windows/                ← DLL for the nupkg
+│   ├── net10.0-windows/                ← DLL for the nupkg
 │   └── generate-icon.ps1
 ├── ZimerfeldCommitMsg/                ← 🧠 this memory vault
 ├── build.ps1                          ← bumps version + build + deploy + nupkg

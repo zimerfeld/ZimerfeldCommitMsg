@@ -6,7 +6,7 @@ atualizado: 2026-08-29
 tags: [projeto, negocio, csharp, gitextensions, plugin, winforms, commit-message, conventional-commits, i18n]
 status: ativo
 linguagem: C#
-versao: 1.0.98
+versao: 1.0.99
 repo: C:\GitExtensions\GitExtensions.ZimerfeldCommitMsg
 ---
 
@@ -36,7 +36,7 @@ C:\GitExtensions\GitExtensions.ZimerfeldCommitMsg\
 ├─ tests\GitExtensions.ZimerfeldCommitMsg.Tests\  # xUnit: comments, concepts, vocab, translation
 ├─ refs\                                        # versioned host DLLs (deterministic build)
 ├─ tools\                                       # install/uninstall/update-dll .ps1, nuget.exe, generate-icon.ps1
-│   └─ net9.0-windows\                          # build output (DLL) used by the nupkg
+│   └─ net10.0-windows\                          # build output (DLL) used by the nupkg
 ├─ ZimerfeldCommitMsg\                          # 🧠 this memory vault
 ├─ build.ps1                                    # bumps version + build + deploy + nupkg
 ├─ README.md / README.pt-BR.md / README.en-US.md  # mirrored in [[📖 README — Instalação, Uso e Build (EN)|README — Install, Use and Build]]
@@ -44,7 +44,7 @@ C:\GitExtensions\GitExtensions.ZimerfeldCommitMsg\
 ```
 
 ## ⚙️ Technical stack
-- **Language:** C# (`net9.0-windows`), `Nullable` + `ImplicitUsings` enabled
+- **Language:** C# (`net10.0-windows`), `Nullable` + `ImplicitUsings` enabled
 - **UI:** WinForms (`UseWindowsForms`) — the plugin **has no window of its own**; it integrates into the host's **commit dialog**
 - **Output type:** `Library` (DLL loaded by GitExtensions)
 - **AssemblyName:** `GitExtensions.Plugins.ZimerfeldCommitMsg`
@@ -115,7 +115,7 @@ tools\update-dll.ps1   # updates just the DLL in the Plugins folder
 > As in the siblings, the DLL goes into the **root** `lib\` ("any" group) for the Plugin Manager to extract; the `nuget pack` **NU5101** warning is deliberately filtered in `build.ps1`. See [[🏷️ Versionamento (EN)|Versioning]] and [[🔗 Dependências (EN)|Dependencies]].
 
 ## 🔢 Versioning
-- Current version: **1.0.98** (csproj + nuspec synced by `build.ps1`)
+- Current version: **1.0.99** (csproj + nuspec synced by `build.ps1`)
 - Scheme: `major.minor.BUILD`, BUILD auto-incremented on each build
 - On every build, `build.ps1` stamps version + date into the **READMEs** (and keeps this vault in sync)
 

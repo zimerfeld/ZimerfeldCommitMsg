@@ -16,7 +16,7 @@ atualizado: 2026-08-29
 - **Qué es:** una extensión (plugin MEF) para **GitExtensions** que se integra en el **diálogo de commit** y **rellena el mensaje automáticamente** analizando `git diff --cached`.
 - **Problema que resuelve:** escribir buenos mensajes de commit es tedioso e inconsistente. El plugin lee lo que **realmente** cambió (comentarios añadidos en el diff + nombres de archivo), clasifica según Conventional Commits y materializa un subject + cuerpo listos — en pt-BR, inglés o español.
 - **Diferenciales:** analiza el **contenido del diff**, no solo los nombres de archivo; **verbo guiado por Conventional Commits** sin contaminar el mensaje con `tipo:`; **dos estrategias** (comentarios + nombres de archivo); **vocabulario por repositorio** (`.zimerfeldcommitmsg.json`) sin recompilar; **auto-refresh** al stage/unstage; **no destructivo**; **i18n** (Automático / PT-BR / EN / ES).
-- **Stack:** C# / WinForms `Library`, con destino **net9.0-windows**, empaquetado como **nupkg**; build y versionado mediante `build.ps1`.
+- **Stack:** C# / WinForms `Library`, con destino **net10.0-windows**, empaquetado como **nupkg**; build y versionado mediante `build.ps1`.
 - **Estado actual:** versión **`1.0.97`** — funcional, con **suite de tests xUnit**.
 - **Público objetivo:** desarrolladores y equipos que usan GitExtensions en Windows y quieren mensajes de commit consistentes con poco esfuerzo.
 - **Ángulo de negocio/portafolio:** producto **open source** bajo el owner `zimerfeld`, junto a los hermanos `GitExtensions.ZimerfeldLFS` y `GitExtensions.ZimerfeldTree`.
@@ -88,7 +88,7 @@ GitExtensions.ZimerfeldCommitMsg/
 ├── refs/                              ← DLLs del host versionadas (Private=false)
 ├── tools/
 │   ├── install.ps1 / uninstall.ps1 / update-dll.ps1
-│   ├── net9.0-windows/                ← DLL para el nupkg
+│   ├── net10.0-windows/                ← DLL para el nupkg
 │   └── generate-icon.ps1
 ├── ZimerfeldCommitMsg/                ← 🧠 este cofre de memoria
 ├── build.ps1                          ← incrementa versión + build + deploy + nupkg

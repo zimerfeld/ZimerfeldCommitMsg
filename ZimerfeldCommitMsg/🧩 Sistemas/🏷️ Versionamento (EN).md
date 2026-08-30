@@ -14,7 +14,7 @@ tags: [build, versão, nupkg, deploy]
 
 `major.minor.build` — only `build` is incremented automatically by `build.ps1`. Major and minor are changed manually.
 
-**Current version:** `1.0.98` *(source of truth: `.nuspec` / `.csproj`)*
+**Current version:** `1.0.99` *(source of truth: `.nuspec` / `.csproj`)*
 
 > [!note] Embedded UI strings (no satellite assemblies)
 > UI strings live in `Resources/Strings.resx` and `Resources/StringsPtBr.resx`, embedded into the
@@ -37,19 +37,19 @@ build.ps1  [-Force]
   ├─ 4b. Stamps version + date at the top of the READMEs (README.md / .pt-BR / .en-US)
   ├─ 5. dotnet build -c Release
   ├─ 6. Copies the DLL → C:\Program Files\GitExtensions\Plugins\  (requires Admin)
-  ├─ 6b. Copies the DLL → tools\net9.0-windows\  (for the nupkg)
+  ├─ 6b. Copies the DLL → tools\net10.0-windows\  (for the nupkg)
   ├─ 7. nuget pack .nuspec → .nupkg at the root (filters the NU5101 warning)
   └─ 7b. Removes .nupkg files of previous versions
 ```
 
 > [!warning] Warning **NU5101** is intentional
 > The DLL is packaged into the **root** `lib\` (the "any" group that the Plugin Manager extracts), not into
-> `lib\net9.0-windows\`. This produces the NU5101 warning, which `build.ps1` **filters on purpose** in
+> `lib\net10.0-windows\`. This produces the NU5101 warning, which `build.ps1` **filters on purpose** in
 > `nuget pack`. Details in [[🔗 Dependências (EN)|Dependencies]] and in the `.nuspec`.
 
 <!-- -->
 
-> Requires the **.NET 9 SDK** (`dotnet`) and, for deployment, **Administrator** permission. Without Admin, the deploy step is skipped with a warning; `nuget` lives at `tools\nuget.exe`.
+> Requires the **.NET 10 SDK** (`dotnet`) and, for deployment, **Administrator** permission. Without Admin, the deploy step is skipped with a warning; `nuget` lives at `tools\nuget.exe`.
 
 ## 📄 Versioned files
 

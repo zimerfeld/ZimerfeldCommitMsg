@@ -29,7 +29,7 @@ Compila en Release, hace deploy de la DLL en `C:\Program Files\GitExtensions\Plu
 3. Cierra el GitExtensions si está en ejecución (libera la DLL).
 4. Sella versión + fecha en los READMEs y en las notas del cofre; hace el bump del `.nuspec`/`.csproj`.
 5. `dotnet build -c Release`.
-6. Copia la DLL a `C:\Program Files\GitExtensions\Plugins\` (Admin) y a `tools\net9.0-windows\`.
+6. Copia la DLL a `C:\Program Files\GitExtensions\Plugins\` (Admin) y a `tools\net10.0-windows\`.
 7. `nuget pack` → `.nupkg` en la raíz (filtra el aviso NU5101) y elimina `.nupkg` antiguos.
 
 ## 🧰 Instalación manual (alternativa a build.ps1)
@@ -50,9 +50,9 @@ Suite **xUnit**: extracción de comentarios, derivación de conceptos, `.zimerfe
 
 ## 🚦 Flags y requisitos
 - `-Force` — recompila/reempaqueta incluso sin cambio detectado.
-- **.NET 9 SDK** (`dotnet`) obligatorio.
+- **.NET 10 SDK** (`dotnet`) obligatorio.
 - **Administrador** obligatorio para el deploy en `C:\Program Files\GitExtensions\Plugins\`. Sin Admin, el paso de deploy se omite con aviso.
-- **GitExtensions 6.x (.NET 9)** instalado; `git` en el `PATH`.
+- **GitExtensions 7.x (.NET 10)** instalado; `git` en el `PATH`.
 
 ## 🔀 Reglas que respeta (GitFlow)
 - Desarrollo en **feature branch**; no commitear/pushear sin petición explícita.

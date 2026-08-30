@@ -5,7 +5,7 @@ lang: es-ES
 atualizado: 2026-08-29
 tags: [conhecimento, readme, instalacao, build, uso, conventional-commits, i18n]
 fonte: README.md
-versao: 1.0.98
+versao: 1.0.99
 ---
 
 # 📖 README — Instalação, Uso e Build
@@ -56,7 +56,7 @@ Ejemplo lado a lado:
 > El nodo **ZimerfeldCommitMsg** solo aparece en **Configuración → Plugins** después de que la DLL con el selector de idioma se instala y GitExtensions se reinicia.
 
 ## ✅ Requisitos
-- GitExtensions 6.x (.NET 9)
+- GitExtensions 7.x (.NET 10)
 - `git` en el `PATH` (el generador ejecuta `git diff --cached`)
 
 ## 🛠️ Build

@@ -6,7 +6,7 @@ atualizado: 2026-08-29
 tags: [projeto, negocio, csharp, gitextensions, plugin, winforms, commit-message, conventional-commits, i18n]
 status: ativo
 linguagem: C#
-versao: 1.0.98
+versao: 1.0.99
 repo: C:\GitExtensions\GitExtensions.ZimerfeldCommitMsg
 ---
 
@@ -36,7 +36,7 @@ C:\GitExtensions\GitExtensions.ZimerfeldCommitMsg\
 ├─ tests\GitExtensions.ZimerfeldCommitMsg.Tests\  # xUnit: comentarios, conceptos, vocab, traducción
 ├─ refs\                                        # DLLs del host versionadas (build determinista)
 ├─ tools\                                       # install/uninstall/update-dll .ps1, nuget.exe, generate-icon.ps1
-│   └─ net9.0-windows\                          # salida del build (DLL) usada por el nupkg
+│   └─ net10.0-windows\                          # salida del build (DLL) usada por el nupkg
 ├─ ZimerfeldCommitMsg\                          # 🧠 este cofre de memoria
 ├─ build.ps1                                    # incrementa versión + build + deploy + nupkg
 ├─ README.md / README.pt-BR.md / README.en-US.md  # reflejado en [[📖 README — Instalação, Uso e Build (ES)|README — Instalación, Uso y Build]]
@@ -44,7 +44,7 @@ C:\GitExtensions\GitExtensions.ZimerfeldCommitMsg\
 ```
 
 ## ⚙️ Stack técnico
-- **Lenguaje:** C# (`net9.0-windows`), `Nullable` + `ImplicitUsings` habilitados
+- **Lenguaje:** C# (`net10.0-windows`), `Nullable` + `ImplicitUsings` habilitados
 - **UI:** WinForms (`UseWindowsForms`) — el plugin **no tiene ventana propia**; se integra en el **diálogo de commit** del host
 - **Tipo de salida:** `Library` (DLL cargada por GitExtensions)
 - **AssemblyName:** `GitExtensions.Plugins.ZimerfeldCommitMsg`
